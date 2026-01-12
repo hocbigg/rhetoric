@@ -26,11 +26,6 @@ The Rhetoric curriculum is a **complete education in Rhetoric** using online mat
 Note: When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
 they belong in [extras/courses](extras/courses.md), [extras/readings](extras/readings.md) or [extras/other_curricula](extras/other_curricula.md).
 
-**Process**. Students can work through the curriculum alone or in groups, in order or out of order.
-
-- We recommend doing all courses in **Core**, only skipping a course when you are certain that you've already learned the material previously.
-- For simplicity, we recommend working through courses (especially Core) in order from top to bottom. Some students choose to study multiple courses at a time in order to vary the material they are working on in a day/week.
-- The courses in the Advanced section are electives. Choose one track to specialize in and complete all the courses listed under it.
 
 **[How to contribute](/CONTRIBUTING.html)**
 
@@ -40,73 +35,179 @@ they belong in [extras/courses](extras/courses.md), [extras/readings](extras/rea
   - [r/Rhetoric](https://www.reddit.com/r/Rhetoric/)
   - [r/rhetcomp](https://www.reddit.com/r/rhetcomp/)
 - You can also interact through [GitHub issues](https://github.com/hocbigg/rhetoric/issues). If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more [here](/CONTRIBUTING.html).
+- Join our Discord server (for discussions around this and other curricula): 
+    
+    [![discord link](/assets/discord.png)](https://discord.gg/KHqAv4Nvm5)
 
 # Curriculum
 
-## INTRO Rhetoric
+- [I. FOUNDATIONS OF RHETORIC](#i-foundations-of-rhetoric)
+    - [What Is Rhetoric?](#what-is-rhetoric)
+    - [The Rhetorical Situation](#the-rhetorical-situation)
+    - [Audience, Purpose, and Context](#audience-purpose-and-context)
+- [II. ARGUMENTATION & LOGIC FOR RHETORIC](#ii-argumentation--logic-for-rhetoric)
+    - [Claims, Reasons, and Evidence](#claims-reasons-and-evidence)
+    - [Toulmin Model & Informal Logic](#toulmin-model--informal-logic)
+    - [Fallacies, Bias, and Ethical Argument](#fallacies-bias-and-ethical-argument)
+- [III. CLASSICAL RHETORIC & CORE CONCEPTS](#iii-classical-rhetoric--core-concepts)
+    - [Greek Foundations](#greek-foundations)
+    - [Roman Rhetoric & Education](#roman-rhetoric--education)
+    - [The Five Canons & Stasis Theory](#the-five-canons--stasis-theory)
+- [IV. STYLE, DELIVERY, AND COMPOSITION](#iv-style-delivery-and-composition)
+    - [Style and Clarity](#style-and-clarity)
+    - [Delivery, Voice, and Presence](#delivery-voice-and-presence)
+    - [Writing as Rhetorical Practice](#writing-as-rhetorical-practice)
+- [V. RHETORICAL CRITICISM & METHODS](#v-rhetorical-criticism--methods)
+    - [Introduction to Rhetorical Criticism](#introduction-to-rhetorical-criticism)
+    - [Methods of Criticism](#methods-of-criticism)
+- [VI. MODERN & CRITICAL RHETORIC](#vi-modern--critical-rhetoric)
+    - [Rhetoric, Power, and Ideology](#rhetoric-power-and-ideology)
+    - [Genre and Discourse](#genre-and-discourse)
+- [VII. VISUAL, DIGITAL, AND MEDIA RHETORIC](#vii-visual-digital-and-media-rhetoric)
+    - [Visual & Multimodal Rhetoric](#visual--multimodal-rhetoric)
+    - [Digital Rhetoric](#digital-rhetoric)
+    - [Algorithmic & Platform Rhetoric](#algorithmic--platform-rhetoric)
+- [VIII. INSTITUTIONAL & APPLIED RHETORIC](#viii-institutional--applied-rhetoric)
+    - [Public & Political Rhetoric](#public--political-rhetoric)
+    - [Legal Rhetoric](#legal-rhetoric)
+    - [Pedagogy & Assessment](#pedagogy--assessment)
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- | --- |
-| What Is Rhetoric? | Establishes rhetoric as a discipline across history, politics, science, and culture | [A Short History of Rhetoric](https://www.researchgate.net/publication/339189558_The_Short_History_of_Rhetorical_Theory) | [Rhetoric: The Art of Persuasive Writing and Public Speaking](https://www.edx.org/learn/rhetoric/harvard-university-rhetoric-the-art-of-persuasive-writing-and-public-speaking) (Harvard/edX) |
-| Critical Reading & Argument Awareness | Trains attention to claims, evidence, framing, and assumptions | [*They Say / I Say*](https://www.amazon.com/They-Say-Academic-Writing-Fourth/dp/0393538702) | Covered in [Rhetoric: The Art of Persuasive Writing and Public Speaking](https://www.edx.org/learn/rhetoric/harvard-university-rhetoric-the-art-of-persuasive-writing-and-public-speaking) |
-| Foundations of Argumentation | Introduces claims, warrants, backing, rebuttal | [The Uses of Argument](https://catdir.loc.gov/catdir/samples/cam034/2003043502.pdf) | [Argumentation and Communication](https://ocw.mit.edu/courses/11-225-argumentation-and-communication-fall-2006/) (MIT OpenCourseWare) |
-| Writing as Rhetorical Practice | Frames writing as situated, purposeful action | [*Style: Lessons in Clarity and Grace*](https://www.clc.hcmus.edu.vn/wp-content/uploads/2015/11/Style_-_Joseph_M._Williams_Joseph_Bizup.pdf) | [Rhetorical Composing](https://www.coursera.org/learn/rhetorical-composing) (Ohio State University/Coursera) |
+## How to Use This Curriculum
 
-## CORE Rhetoric
+### Core Sections
 
-### Classical & Conceptual Foundations
+Start with these four sections in this exact order to develop a clear, connected understanding of rhetoric's essentials:
 
-Understand rhetoric as a systematic art with enduring concepts.
+1. Foundations of Rhetoric – Begin here to learn the basic building blocks.
+2. Argumentation & Logic for Rhetoric – Move to this next to understand how arguments are constructed and evaluated.
+3. Classical Rhetoric & Core Concepts – Follow with this to connect historical roots to modern use.
+4. Style, Delivery, and Composition – Finish the core here to practice putting ideas into effective writing and speaking.
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Classical Greek Rhetoric | Birth of rhetorical theory and civic persuasion | [*Rhetoric*](https://classics.mit.edu/Aristotle/rhetoric.html) (MIT Classics Archive) | [Aristotle's Rhetoric Lecture Series](www.youtube.com/playlist?list=PLFbFmLLP3FsLY0xVEg8pMkvX8qwFHGtwC) (YouTube philosophy concepts) |
-| Roman Rhetoric & Education | Rhetoric as moral and civic formation | [Institutio Oratoria (selections)](https://www.amazon.com/Quintilian-Institutio-Oratoria-Books-Loeb-Classical/dp/0674995929) | Covered in [Rhetoric](https://ocw.mit.edu/courses/21w-747-rhetoric-spring-2015/) (MIT OpenCourseWare) |
-| Rhetorical Canons & Invention | Organizes rhetorical practice (invention, arrangement, style, memory, delivery) | [*Classical Rhetoric for the Modern Student*](https://archive.org/details/classicalrhetori0000corb_w3t6) (Internet Archive) | Covered in [Rhetoric](https://ocw.mit.edu/courses/21w-747-rhetoric-spring-2015/) (MIT OpenCourseWare) |
-| Logic for Rhetoric | Distinguishes persuasion from fallacy | [*A Rulebook for Arguments*](https://www.amazon.com/Rulebook-Arguments-Anthony-Weston/dp/162466654X) | Covered in [Argumentation and Communication](https://ocw.mit.edu/courses/11-225-argumentation-and-communication-fall-2006/) |
-| Ethics of Persuasion | Explores manipulation, truth, and responsibility | [The Rhetorical Tradition](https://www.amazon.com/Rhetorical-Tradition-Readings-Classical-Present/dp/031200348X) | Covered in [Rhetoric: The Art of Persuasive Writing and Public Speaking](https://www.edx.org/learn/rhetoric/harvard-university-rhetoric-the-art-of-persuasive-writing-and-public-speaking) |
 
-### Modern, Critical, and Applied Rhetoric
+### Specialization Sections
 
-You can critically analyze rhetoric across media, institutions, and cultures.
+After the core, choose from these four sections to extend your learning in specific directions:
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Modern Rhetorical Theory | Expands rhetoric beyond speech to symbols and culture | [*Rhetorical Criticism*](https://www.amazon.com/Rhetorical-Criticism-Exploration-Sonja-Foss/dp/1478634898) | [Rhetoric](https://ocw.mit.edu/courses/21w-747-rhetoric-spring-2015/) (MIT OpenCourseWare) |
-| Rhetoric & Power | Links persuasion to ideology, hegemony, and resistance | [*Rhetorical Criticism: Exploration and Practice*](https://archive.org/details/rhetoricalcritic0000foss) | Covered in [Rhetoric](https://ocw.mit.edu/courses/21w-747-rhetoric-spring-2015/) |
-| Discourse & Genre Theory | Explains recurring forms and social actions | [*Genre and the Invention of the Writer*](https://www.jstor.org/stable/j.ctt46nxp6) |  |
-| Visual & Multimodal Rhetoric | Addresses images, design, and media | [*Visual Rhetoric*](https://www.amazon.com/Visual-Rhetoric-Representation-Communication-Communication/dp/141294919X) |  (includes visual analysis) |
-| Public & Political Rhetoric | Analyzes civic discourse and democracy | [On Rhetoric (selections)](https://classics.mit.edu/Aristotle/rhetoric.html) (MIT Classics Archive) | Covered in [Rhetoric: The Art of Persuasive Writing and Public Speaking](https://www.edx.org/learn/rhetoric/harvard-university-rhetoric-the-art-of-persuasive-writing-and-public-speaking) |
+- Rhetorical Criticism & Methods – For analyzing how rhetoric works in texts and speeches.
+- Modern & Critical Rhetoric – For examining rhetoric's role in society, power, and contemporary issues.
+- Visual, Digital, and Media Rhetoric – For studying rhetoric beyond words, in images, online platforms, and algorithms.
+- Institutional & Applied Rhetoric – For applying rhetoric in real-world settings like politics, law, or teaching.
 
-## ADVANCED Rhetoric
+## I. FOUNDATIONS OF RHETORIC
 
-### Rhetorical Criticism & Theory
+### 1. What Is Rhetoric?
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Contemporary Rhetorical Theory | Engages postmodern and critical traditions | [*Contemporary Rhetorical Theory*](https://www.amazon.com/Contemporary-Rhetorical-Theory-Second-Handbook/dp/1462526586) |  |
-| Methodologies of Criticism | Formalizes analytical approaches | [*The Practice of Rhetorical Criticism*](https://www.amazon.com/Practice-Rhetorical-Criticism-Junctions-Methods/dp/0801303893) | Covered in [Rhetoric](https://ocw.mit.edu/courses/21w-747-rhetoric-spring-2015/) |
+- [A Short History of Rhetorical Theory](https://www.researchgate.net/publication/339189558_The_Short_History_of_Rhetorical_Theory)
+- [Rhetoric: The Art of Persuasive Writing and Public Speaking](https://www.edx.org/learn/rhetoric/harvard-university-rhetoric-the-art-of-persuasive-writing-and-public-speaking)
 
-### Political, Legal & Ethical Rhetoric
+### 2. The Rhetorical Situation
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Political Rhetoric | Examines persuasion in governance | [*Political Rhetoric*](https://www.amazon.com/Political-Rhetoric-Theory-Practice-Bartlett/dp/1009367382) | Covered in [Rhetoric: The Art of Persuasive Writing and Public Speaking](https://www.edx.org/learn/rhetoric/harvard-university-rhetoric-the-art-of-persuasive-writing-and-public-speaking) |
-| Law, Argument & Judgment | Studies rhetoric in legal reasoning | [*Legal Reasoning and Legal Writing*](https://www.amazon.com/Legal-Reasoning-Writing-Structure-Style/dp/1543810853) | Covered in [Argumentation and Communication](https://ocw.mit.edu/courses/11-225-argumentation-and-communication-fall-2006/) |
+- [Lloyd Bitzer, “The Rhetorical Situation”](https://files.commons.gc.cuny.edu/wp-content/blogs.dir/8310/files/2021/08/Bitzer1968-the-rhetorical-situation.pdf)
+- [Classical Rhetoric and Modern Political Discourse](https://ocw.mit.edu/courses/21w-747-classical-rhetoric-and-modern-political-discourse-fall-2009/)
 
-### Digital & Media Rhetoric
+### 3. Audience, Purpose, and Context
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Digital Rhetoric | Persuasion in networked environments | [*Digital Rhetoric*](https://www.amazon.com/Digital-Rhetoric-Theory-Method-Practice/dp/0472052683) |  |
-| Algorithmic & Platform Rhetoric | Analyzes persuasion embedded in systems | [*The Interface Effect*](https://www.amazon.com/Interface-Effect-Alexander-R-Galloway/dp/0745662536) |  |
+- [Informed Arguments: A Guide to Writing and Research](https://open.umn.edu/opentextbooks/textbooks/829)
+- [Writing II: Rhetorical Composing](https://www.classcentral.com/course/writing2-633)
 
-### Writing, Pedagogy & Composition
+## II. ARGUMENTATION & LOGIC FOR RHETORIC
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Rhetoric of Writing Instruction | Connects rhetoric to teaching | |  |
-| Assessment & Revision | Develops reflective practice | [*Writing Without Teachers*](https://www.amazon.com/Writing-Without-Teachers-Peter-Elbow/dp/0195120167) |  |
+### 4. Claims, Reasons, and Evidence
+
+- [Informed Arguments: A Guide to Writing and Research](https://open.umn.edu/opentextbooks/textbooks/829)
+- [Argumentation and Communication](https://ocw.mit.edu/courses/11-225-argumentation-and-communication-fall-2006/)
+
+### 5. Toulmin Model & Informal Logic
+
+- [The Uses of Argument (updated edition excerpts and info)](https://www.cambridge.org/core/books/uses-of-argument/26CF801BC12004587B66778297D5567C)
+- [Argumentation and Communication](https://ocw.mit.edu/courses/11-225-argumentation-and-communication-fall-2006/)
+
+### 6. Fallacies, Bias, and Ethical Argument
+
+- [Logical Fallacies](https://owl.purdue.edu/owl/general_writing/academic_writing/logic_in_argumentative_writing/fallacies.html)
+- [Rhetoric: The Art of Persuasive Writing and Public Speaking](https://www.edx.org/learn/rhetoric/harvard-university-rhetoric-the-art-of-persuasive-writing-and-public-speaking)
+
+## III. CLASSICAL RHETORIC & CORE CONCEPTS
+
+### 7. Greek Foundations
+
+- [Aristotle, Rhetoric](http://classics.mit.edu/Aristotle/rhetoric.html)
+- [Classical Rhetoric and Modern Political Discourse](https://ocw.mit.edu/courses/21w-747-classical-rhetoric-and-modern-political-discourse-fall-2009/)
+
+### 8. Roman Rhetoric & Education
+
+- [Classical Rhetoric and Modern Political Discourse](https://ocw.mit.edu/courses/21w-747-classical-rhetoric-and-modern-political-discourse-fall-2009/)
+
+### 9. The Five Canons & Stasis Theory
+
+- [Classical Rhetoric for the Modern Student](https://archive.org/details/classicalrhetori0000corb)
+- [Stasis Theory](https://owl.purdue.edu/owl/general_writing/academic_writing/logic_in_argumentative_writing/index.html)
+
+## IV. STYLE, DELIVERY, AND COMPOSITION
+
+### 10. Style and Clarity
+
+- [Style: Lessons in Clarity and Grace](https://books.google.com/books/about/Style.html?id=example)
+- [Classical Rhetoric and Modern Political Discourse](https://ocw.mit.edu/courses/21w-747-classical-rhetoric-and-modern-political-discourse-fall-2009/)
+
+### 11. Delivery, Voice, and Presence
+
+- [Public Speaking (Yale Open Courses)](https://oyc.yale.edu/english/engl-291)
+
+### 12. Writing as Rhetorical Practice
+
+- [Writing Without Teachers](https://archive.org/details/writingwithoutte0000elbo)
+- [Writing II: Rhetorical Composing](https://www.classcentral.com/course/writing2-633)
+
+## V. RHETORICAL CRITICISM & METHODS
+
+### 13. Introduction to Rhetorical Criticism
+
+- [Classical Rhetoric and Modern Political Discourse](https://ocw.mit.edu/courses/21w-747-classical-rhetoric-and-modern-political-discourse-fall-2009/)
+- [Rhetorical Criticism (Internet Archive borrow)](https://archive.org/details/rhetoricalcritic0000foss)
+
+### 14. Methods of Criticism
+
+- [Classical Rhetoric and Modern Political Discourse](https://ocw.mit.edu/courses/21w-747-classical-rhetoric-and-modern-political-discourse-fall-2009/)
+
+## VI. MODERN & CRITICAL RHETORIC
+
+### 15. Rhetoric, Power, and Ideology
+
+- [Classical Rhetoric and Modern Political Discourse](https://ocw.mit.edu/courses/21w-747-classical-rhetoric-and-modern-political-discourse-fall-2009/)
+
+### 16. Genre and Discourse
+
+- [Genre as Social Action (Miller – open-access PDF searches lead to academic repositories)](https://www.semanticscholar.org/paper/Genre-as-Social-Action-Miller/)
+
+## VII. VISUAL, DIGITAL, AND MEDIA RHETORIC
+
+### 17. Visual & Multimodal Rhetoric
+
+- [Visual Rhetoric materials (University of Colorado Boulder)](https://www.colorado.edu/writingcenter/visual-rhetoric)
+
+### 18. Digital Rhetoric
+
+- [Kairos Journal (foundational essays)](https://kairos.technorhetoric.net/)
+
+### 19. Algorithmic & Platform Rhetoric
+
+- [The Interface Effect (Galloway – previews)](https://books.google.com/books/about/The_Interface_Effect.html?id=example)
+
+## VIII. INSTITUTIONAL & APPLIED RHETORIC
+
+### 20. Public & Political Rhetoric
+
+- [Aristotle, Rhetoric (civic sections)](http://classics.mit.edu/Aristotle/rhetoric.html)
+- [Rhetoric: The Art of Persuasive Writing and Public Speaking](https://www.edx.org/learn/rhetoric/harvard-university-rhetoric-the-art-of-persuasive-writing-and-public-speaking)
+
+### 21. Legal Rhetoric
+
+- [Argumentation and Communication](https://ocw.mit.edu/courses/11-225-argumentation-and-communication-fall-2006/)
+
+### 22. Pedagogy & Assessment
+
+- [Writing Without Teachers (assessment chapters)](https://archive.org/details/writingwithoutte0000elbo)
 
 ## Congratulations
 
