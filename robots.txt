@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hocbigg.github.io/rhetoic/sitemap.xml
+Sitemap: https://hocbigg.github.io/rhetoric/sitemap.xml
