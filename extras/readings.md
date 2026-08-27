@@ -2,8 +2,6 @@
 
 A curated collection of field-defining primary texts, transformative monographs, and landmark essays in Rhetoric. These works illustrate how foundational thinkers have conceptualized persuasion, symbolic action, public discourse, and the construction of knowledge.
 
----
-
 ## Classical Primary Foundations
 
 | Title | Author(s) | Type | Why It's Worth Reading |
@@ -12,8 +10,6 @@ A curated collection of field-defining primary texts, transformative monographs,
 | [*Gorgias and Phaedrus*](https://www.gutenberg.org/ebooks/1672) | Plato | Philosophical Dialogues | Plato's pivotal critique of manipulative sophistry in *Gorgias*, balanced by *Phaedrus*, which envisions a true philosophical rhetoric rooted in dialectic, truth, and psychological understanding of the soul. |
 | *De Oratore* (On the Ideal Orator) | Cicero | Philosophical Dialogue | Cicero's crowning work on civic rhetoric, arguing that the ideal orator must unify broad philosophical erudition, law, ethical integrity, and stylistic eloquence in service of the republic. |
 | *Institutio Oratoria* (Institutes of Oratory) | Quintilian | Pedagogical Treatise | The definitive twelve-volume Roman treatise on rhetorical education, establishing the lifelong ideal of the orator as "the good person speaking well" (*vir bonus dicendi peritus*). |
-
----
 
 ## Modern Theoretical & Philosophical Masterworks
 
@@ -25,8 +21,6 @@ A curated collection of field-defining primary texts, transformative monographs,
 | *The Rhetoric of Fiction* | Wayne C. Booth | Monograph | A landmark study in narrative theory analyzing how authors employ rhetorical devices, value systems, and the "implied author" to control audience perception and ethical judgment. |
 | *The Structural Transformation of the Public Sphere* | Jürgen Habermas | Monograph | A foundational historical and sociological investigation into the emergence, institutional conditions, and subsequent decline of rational-critical public discourse in democratic societies. |
 
----
-
 ## Seminal Theoretical & Critical Essays
 
 | Title | Author(s) | Type | Why It's Worth Reading |
@@ -37,8 +31,6 @@ A curated collection of field-defining primary texts, transformative monographs,
 | "The 'Ideograph': A Link Between Rhetoric and Ideology" | Michael Calvin McGee | Landmark Paper | Demonstrates how high-order abstraction terms (e.g., "liberty," "equality," "property") function as structural building blocks of public consciousness and ideological commitment. |
 | "Critical Rhetoric: Theory and Praxis" | Raymie E. McKerrow | Landmark Paper | Establishes a post-structuralist critical praxis oriented toward unmasking discourses of power, domination, and freedom in institutional and vernacular rhetoric. |
 
----
-
 ## Feminist, Cultural, and Decolonial Interventions
 
 | Title | Author(s) | Type | Why It's Worth Reading |
@@ -47,8 +39,6 @@ A curated collection of field-defining primary texts, transformative monographs,
 | *Rhetoric Retold: Regendering the Tradition from Antiquity Through the Renaissance* | Cheryl Glenn | Monograph | A ground-breaking historiographical recovery that uncovers and reinterprets women rhetors (such as Aspasia, Diotima, and Julian of Norwich) excluded from the canonical history of rhetoric. |
 | "Stories Take Place: A Rhetoric of Land, Space, and Memory" | Malea Powell | Landmark Essay | A foundational decolonial intervention illustrating how Indigenous rhetorics weave space, land, and material practices into survival narratives that disrupt colonial archives. |
 | *Publics and Counterpublics* | Michael Warner | Monograph / Collection | Investigates how modern publics are discursively brought into existence by circulation, and how marginalized counterpublics construct alternative arenas of identity and politics. |
-
----
 
 ## Rhetoric of Science, Technology, and Digital Media
 

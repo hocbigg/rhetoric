@@ -6,8 +6,6 @@ A curated directory of step-by-step methodological guides, analytical walkthroug
 
 Select a tangible artifact or analysis to build below to discover underlying rhetorical frameworks through direct application.
 
----
-
 ## Textual & Rhetorical Criticism
 
 - [How to Write a Rhetorical Analysis: Step-by-Step Guide](https://owl.purdue.edu/owl/general_writing/academic_writing/rhetorical_situations/elements_of_rhetorical_situations.html) (Purdue OWL)
