@@ -31,52 +31,52 @@ they belong in [extras/courses](extras/courses.md), [extras/readings](extras/rea
 # Curriculum
 
 - [FOUNDATIONS OF RHETORIC](#foundations-of-rhetoric)
-- [ARGUMENTATION & LOGIC FOR RHETORIC](#argumentation--logic-for-rhetoric)
-- [CLASSICAL RHETORIC & CORE CONCEPTS](#classical-rhetoric--core-concepts)
+- [CLASSICAL RHETORIC & THE FIVE CANONS](#classical-rhetoric--the-five-canons)
+- [ARGUMENTATION, LOGIC, AND RHETORICAL ANALYSIS](#argumentation-logic-and-rhetorical-analysis)
 - [STYLE, DELIVERY, AND COMPOSITION](#style-delivery-and-composition)
 
 ## How to Use This Curriculum
 
 ### Core Sections
 
-Start with these four sections in this exact order to develop a clear, connected understanding of rhetoric's essentials:
+Study these four sections in order to develop a rigorous, connected foundation in rhetorical theory, history, critical analysis, and practical craft:
 
-1. Foundations of Rhetoric – Begin here to learn the basic building blocks.
-2. Argumentation & Logic for Rhetoric – Move to this next to understand how arguments are constructed and evaluated.
-3. Classical Rhetoric & Core Concepts – Follow with this to connect historical roots to modern use.
-4. Style, Delivery, and Composition – Finish the core here to practice putting ideas into effective writing and speaking.
+1. Foundations of Rhetoric – Learn the nature of rhetorical inquiry, the dynamics of the rhetorical situation, and the foundational proofs: ethos, pathos, and logos.
+2. Classical Rhetoric & The Five Canons – Trace historical origins in ancient Greece and Rome, mastering the overarching frameworks of invention, arrangement, style, memory, delivery, and stasis theory.
+3. Argumentation, Logic, and Rhetorical Analysis – Deconstruct argument architecture using informal logic and the Toulmin model, recognize logical fallacies, and practice systematic rhetorical criticism.
+4. Style, Delivery, and Composition – Apply rhetorical knowledge to written prose and oral performance, focusing on clarity, figurative language, delivery techniques, and academic composition.
 
 ## FOUNDATIONS OF RHETORIC
 
 | Subject | Resources |
 | --- | --- |
-| 1. What Is Rhetoric? | - [A Short History of Rhetorical Theory](https://www.researchgate.net/publication/339189558_The_Short_History_of_Rhetorical_Theory)<br>- [Rhetoric: The Art of Persuasive Writing and Public Speaking](https://www.edx.org/learn/rhetoric/harvard-university-rhetoric-the-art-of-persuasive-writing-and-public-speaking) |
-| 2. The Rhetorical Situation | - [Lloyd Bitzer, “The Rhetorical Situation”](https://files.commons.gc.cuny.edu/wp-content/blogs.dir/8310/files/2021/08/Bitzer1968-the-rhetorical-situation.pdf)<br>- [Classical Rhetoric and Modern Political Discourse](https://ocw.mit.edu/courses/21w-747-classical-rhetoric-and-modern-political-discourse-fall-2009/) |
-| 3. Audience, Purpose, and Context | - [Informed Arguments: A Guide to Writing and Research](https://open.umn.edu/opentextbooks/textbooks/829)<br>- [Writing II: Rhetorical Composing](https://www.classcentral.com/course/writing2-633) |
+| What Is Rhetoric? Scope and Definitions | - [The History and Theory of Rhetoric: An Introduction](https://www.routledge.com/The-History-and-Theory-of-Rhetoric-An-Introduction/Winslow-Herrick/p/book/9781032813141) by James A. Herrick<br>- [Rhetoric: The Art of Persuasive Writing and Public Speaking](https://www.edx.org/learn/rhetoric/harvard-university-rhetoric-the-art-of-persuasive-writing-and-public-speaking) (Harvard University / edX) |
+| The Rhetorical Situation and Kairos | - [Lloyd Bitzer, “The Rhetorical Situation” (1968)](https://files.commons.gc.cuny.edu/wp-content/blogs.dir/8310/files/2021/08/Bitzer1968-the-rhetorical-situation.pdf)<br>- [Elements of Rhetorical Situations](https://owl.purdue.edu/owl/general_writing/academic_writing/rhetorical_situations/elements_of_rhetorical_situations.html) (Purdue OWL) |
+| The Rhetorical Appeals: Ethos, Pathos, and Logos | - [Aristotle, Rhetoric (Book I & II: The Modes of Persuasion)](http://classics.mit.edu/Aristotle/rhetoric.html)<br>- [Rhetoric: The Art of Persuasive Writing and Public Speaking](https://www.edx.org/learn/rhetoric/harvard-university-rhetoric-the-art-of-persuasive-writing-and-public-speaking) (Harvard University / edX) |
 
-## ARGUMENTATION & LOGIC FOR RHETORIC
-
-| Subject | Resources |
-| --- | --- |
-| 4. Claims, Reasons, and Evidence | - [Informed Arguments: A Guide to Writing and Research](https://open.umn.edu/opentextbooks/textbooks/829)<br>- [Argumentation and Communication](https://ocw.mit.edu/courses/11-225-argumentation-and-communication-fall-2006/) |
-| 5. Toulmin Model & Informal Logic | - [The Uses of Argument (updated edition excerpts and info)](https://www.cambridge.org/core/books/uses-of-argument/26CF801BC12004587B66778297D5567C)<br>- [Argumentation and Communication](https://ocw.mit.edu/courses/11-225-argumentation-and-communication-fall-2006/) |
-| 6. Fallacies, Bias, and Ethical Argument | - [Logical Fallacies](https://owl.purdue.edu/owl/general_writing/academic_writing/logic_in_argumentative_writing/fallacies.html)<br>- [Rhetoric: The Art of Persuasive Writing and Public Speaking](https://www.edx.org/learn/rhetoric/harvard-university-rhetoric-the-art-of-persuasive-writing-and-public-speaking) |
-
-## CLASSICAL RHETORIC & CORE CONCEPTS
+## CLASSICAL RHETORIC & THE FIVE CANONS
 
 | Subject | Resources |
 | --- | --- |
-| 7. Greek Foundations | - [Aristotle, Rhetoric](http://classics.mit.edu/Aristotle/rhetoric.html)<br>- [Classical Rhetoric and Modern Political Discourse](https://ocw.mit.edu/courses/21w-747-classical-rhetoric-and-modern-political-discourse-fall-2009/) |
-| 8. Roman Rhetoric & Education | - [Classical Rhetoric and Modern Political Discourse](https://ocw.mit.edu/courses/21w-747-classical-rhetoric-and-modern-political-discourse-fall-2009/) |
-| 9. The Five Canons & Stasis Theory | - [Classical Rhetoric for the Modern Student](https://archive.org/details/classicalrhetori0000corb)<br>- [Stasis Theory](https://owl.purdue.edu/owl/general_writing/academic_writing/logic_in_argumentative_writing/index.html) |
+| Greek Foundations: The Sophists, Plato, and Aristotle | - [The Rhetorical Tradition: Readings from Classical Times to the Present](https://archive.org/details/rhetoricaltradit0000unse) edited by Patricia Bizzell and Bruce Herzberg<br>- [Aristotle, Rhetoric](http://classics.mit.edu/Aristotle/rhetoric.html) (Translated by W. Rhys Roberts, MIT Internet Classics Archive) |
+| Roman Rhetoric: Cicero, Quintilian, and Civic Education | - [The Rhetorical Tradition: Readings from Classical Times to the Present](https://archive.org/details/rhetoricaltradit0000unse) (Selections from Cicero's *De Oratore* and Quintilian's *Institutio Oratoria*)<br>- [Classical Rhetoric and Modern Political Discourse](https://ocw.mit.edu/courses/21w-747-classical-rhetoric-and-modern-political-discourse-fall-2009/) (MIT OpenCourseWare) |
+| The Five Canons and Stasis Theory | - [Classical Rhetoric for the Modern Student](https://archive.org/details/classicalrhetori0000corb) by Edward P.J. Corbett and Robert J. Connors<br>- [Stasis Theory Guide](https://owl.purdue.edu/owl/general_writing/the_writing_process/prewriting/stasis_theory.html) (Purdue OWL) |
+
+## ARGUMENTATION, LOGIC, AND RHETORICAL ANALYSIS
+
+| Subject | Resources |
+| --- | --- |
+| Argument Structure: Claims, Reasons, and the Toulmin Model | - [The Uses of Argument](https://www.cambridge.org/core/books/uses-of-argument/26CF801BC12004587B66778297D5567C) by Stephen Toulmin<br>- *Writing Arguments: A Rhetoric with Readings* by John D. Ramage, John C. Bean, and June Johnson |
+| Fallacies, Bias, and Rhetorical Ethics | - [Logical Fallacies](https://owl.purdue.edu/owl/general_writing/academic_writing/logic_in_argumentative_writing/fallacies.html) (Purdue OWL)<br>- [Rhetoric: The Art of Persuasive Writing and Public Speaking](https://www.edx.org/learn/rhetoric/harvard-university-rhetoric-the-art-of-persuasive-writing-and-public-speaking) (Harvard University / edX) |
+| Rhetorical Analysis and Criticism | - *Rhetorical Criticism: Exploration and Practice* by Sonja K. Foss (Waveland Press)<br>- [Elements of Rhetorical Analysis](https://owl.purdue.edu/owl/general_writing/academic_writing/rhetorical_situations/elements_of_rhetorical_situations.html) (Purdue OWL) |
 
 ## STYLE, DELIVERY, AND COMPOSITION
 
 | Subject | Resources |
 | --- | --- |
-| 10. Style and Clarity | - [Style: Lessons in Clarity and Grace](https://books.google.com/books/about/Style.html?id=example)<br>- [Classical Rhetoric and Modern Political Discourse](https://ocw.mit.edu/courses/21w-747-classical-rhetoric-and-modern-political-discourse-fall-2009/) |
-| 11. Delivery, Voice, and Presence | - [Public Speaking (Yale Open Courses)](https://oyc.yale.edu/english/engl-291) |
-| 12. Writing as Rhetorical Practice | - [Writing Without Teachers](https://archive.org/details/writingwithoutte0000elbo)<br>- [Writing II: Rhetorical Composing](https://www.classcentral.com/course/writing2-633) |
+| Style, Clarity, and Figurative Language | - *Style: Lessons in Clarity and Grace* by Joseph M. Williams and Joseph Bizup<br>- *Figures of Speech: 60 Ways to Turn a Phrase* by Arthur Quinn |
+| Delivery, Voice, and Public Address | - [Introduction to Public Speaking](https://www.coursera.org/learn/public-speaking) (University of Washington / Coursera)<br>- *The Art of Public Speaking* by Stephen E. Lucas |
+| Rhetorical Composition and Academic Writing | - *They Say / I Say: The Moves That Matter in Academic Writing* by Gerald Graff and Cathy Birkenstein<br>- [Writing II: Rhetorical Composing](https://www.classcentral.com/course/writing2-633) (Ohio State University / Coursera) |
 
 # Code of conduct
 

@@ -1,28 +1,35 @@
 # Great Courses
 
-This is a list of high-quality courses that, for one reason or another, didn't make it into the curriculum.
-The most common reasons are that the course isn't available often enough,
-or that there was an alternative that fit better into the curriculum.
+A curated directory of standout university lecture series, OpenCourseWare repositories, and comprehensive MOOCs in Rhetoric. These audiovisual courses offer deep intuition, historical context, and practical mastery across classical oratory, informal logic, public address, and critical media theory.
 
-## Introductory Rhetoric
+---
 
-Courses | Duration | Effort
-:-- | :--: | :--:
-[Classical Rhetoric and Modern Political Discourse](https://ocw.mit.edu/courses/21w-747-classical-rhetoric-and-modern-political-discourse-fall-2009/) (MIT OpenCourseWare) | 14 weeks | 8-10 hours/week
-[Writing and Rhetoric: Rhetoric and Contemporary Issues](https://ocw.mit.edu/courses/21w-011-writing-and-rhetoric-rhetoric-and-contemporary-issues-fall-2015/) (MIT OpenCourseWare) | 12 weeks | 8-10 hours/week
-[Writing II: Rhetorical Composing](https://www.coursera.org/learn/writing2) (Ohio State University/Coursera, free to audit) | 8 weeks | 4-6 hours/week
+## Classical & Civic Rhetoric
 
-## Advanced Rhetoric
+- [Classical Rhetoric and Modern Political Discourse (MIT OpenCourseWare / Prof. Rosalind Picard & Staff)](https://ocw.mit.edu/courses/21w-747-classical-rhetoric-and-modern-political-discourse-fall-2009/)
+- [Rhetoric: The Art of Persuasive Writing and Public Speaking (Harvard University / edX / Prof. James Engell)](https://www.edx.org/learn/rhetoric/harvard-university-rhetoric-the-art-of-persuasive-writing-and-public-speaking)
+- [Writing and Rhetoric: Rhetoric and Contemporary Issues (MIT OpenCourseWare / Dr. Andrea Walsh)](https://ocw.mit.edu/courses/21w-011-writing-and-rhetoric-rhetoric-and-contemporary-issues-fall-2015/)
 
-Courses | Duration | Effort
-:-- | :--: | :--:
-[Rhetoric of Science](https://ocw.mit.edu/courses/21w-747-2-rhetoric-rhetoric-of-science-spring-2006/) (MIT OpenCourseWare) | 13 weeks | 8-10 hours/week
-[Writing and Rhetoric: Designing Meaning](https://ocw.mit.edu/courses/21w-016-writing-and-rhetoric-designing-meaning-fall-2016/) (MIT OpenCourseWare) | 12 weeks | 8-10 hours/week
+---
 
-## Online Learning - Great Courses
+## Argumentation, Logic, and Debate
 
-Courses | Duration | Effort
-:-- | :--: | :--:
-[Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn) | 4 weeks | 2 hours/week
-[Mindshift](https://www.coursera.org/learn/mindshift) | 4 weeks | 2 hours/week
-[Powersearching with Google](https://www.edx.org/learn/google-power-searching/google-power-searching-with-google) | 3 weeks | 4-6 hours/week
+- [Think Again: How to Understand Arguments (Duke University / Coursera / Prof. Walter Sinnott-Armstrong & Prof. Ram Neta)](https://www.coursera.org/learn/understanding-arguments)
+- [Argumentation and Communication (MIT OpenCourseWare / Prof. Cherie Miot Abbanat)](https://ocw.mit.edu/courses/11-225-argumentation-and-communication-fall-2006/)
+- [Writing and Rhetoric: Designing Meaning (MIT OpenCourseWare / Dr. Steven Strang)](https://ocw.mit.edu/courses/21w-016-writing-and-rhetoric-designing-meaning-fall-2016/)
+
+---
+
+## Public Address, Performance, and Professional Oratory
+
+- [Dynamic Public Speaking Specialization (University of Washington / Coursera / Dr. Matt McGarrity)](https://www.coursera.org/specializations/public-speaking)
+- [Introduction to Public Speaking (University of Washington / Coursera / Dr. Matt McGarrity)](https://www.coursera.org/learn/public-speaking)
+- [Leadership Communication for Maximum Impact: Storytelling (Northwestern University / Coursera / Prof. Craig Wortmann)](https://www.coursera.org/learn/leadership-communication)
+
+---
+
+## Rhetoric of Science, Critical Theory, and Digital Media
+
+- [Rhetoric: Rhetoric of Science (MIT OpenCourseWare / Dr. James Paradis)](https://ocw.mit.edu/courses/21w-747-2-rhetoric-rhetoric-of-science-spring-2006/)
+- [Introduction to Theory of Literature (Open Yale Courses / Prof. Paul H. Fry)](https://oyc.yale.edu/english/engl-300)
+- [Writing II: Rhetorical Composing (Ohio State University / Coursera / Dr. Susan Delagrange, Dr. Kay Halasek, et al.)](https://www.coursera.org/learn/writing2)
