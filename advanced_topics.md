@@ -1,52 +1,67 @@
-# Advanced Topics
+# Advanced Topics in Rhetoric
 
-After completing the core curriculum, select from these five specialized tracks to deepen your research and applied practice:
+Select from these five specialized tracks to deepen your analytical depth and applied rhetorical craft:
 
-- [ADVANCED RHETORICAL THEORY & CRITICAL TRADITIONS](#advanced-rhetorical-theory--critical-traditions) – For exploring modern philosophical, ideological, and cultural expansions of rhetorical theory.
-- [RHETORICAL CRITICISM & QUALITATIVE METHODOLOGIES](#rhetorical-criticism--qualitative-methodologies) – For mastering advanced research methods to analyze speeches, texts, material spaces, and historical archives.
-- [VISUAL, DIGITAL, AND COMPUTATIONAL RHETORICS](#visual-digital-and-computational-rhetorics) – For examining how persuasion operates in images, interfaces, procedural software, and algorithmic architectures.
-- [RHETORIC OF SCIENCE, TECHNOLOGY, AND MEDICINE (RSTM)](#rhetoric-of-science-technology-and-medicine-rstm) – For investigating how scientific authority, medical diagnoses, and environmental policies are rhetorically constructed.
-- [APPLIED, CIVIC, AND INSTITUTIONAL RHETORIC](#applied-civic-and-institutional-rhetoric) – For analyzing and intervening in democratic deliberation, legal discourse, and critical pedagogy.
+- [Advanced Rhetorical Theory & Critical Traditions](#advanced-rhetorical-theory-critical-traditions) - Investigates ideological, cultural, and philosophical expansions of rhetoric beyond classical persuasion into power dynamics, subjectivity, and symbolic action.
+- [Rhetorical Criticism & Qualitative Methodologies](#rhetorical-criticism-qualitative-methodologies) - Provides advanced research frameworks and qualitative methods for deconstructing symbolic artifacts, material environments, institutional genres, and archival records.
+- [Visual, Digital, and Procedural Rhetorics](#visual-digital-and-procedural-rhetorics) - Investigates how persuasive and communicative power operates across visual artifacts, user interfaces, procedural code, and computational corpora.
+- [Rhetoric of Science, Technology, and Medicine](#rhetoric-of-science-technology-and-medicine) - Examines how scientific consensus, clinical authority, environmental crises, and technological artifacts are rhetorically negotiated and established.
+- [Civic, Legal, and Political Rhetorics](#civic-legal-and-political-rhetorics) - Applies rhetorical frameworks to examine democratic deliberation, grassroots mobilization, legal jurisprudence, and institutional public affairs.
 
-## ADVANCED RHETORICAL THEORY & CRITICAL TRADITIONS
+## Advanced Rhetorical Theory & Critical Traditions
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| Burkean Dramatism and Identification | Investigates Kenneth Burke's transformation of rhetoric from persuasion to identification, symbolic action, and dramatistic motives (the pentad). Essential for analyzing human motives and division. | - *A Grammar of Motives* by Kenneth Burke<br>- *Language as Symbolic Action: Essays on Life, Literature, and Method* by Kenneth Burke |
-| Critical Rhetoric, Ideology, and Power | Examines how discourse produces and maintains relations of domination and power, integrating continental philosophy with rhetorical action. | - "Critical Rhetoric: Theory and Praxis" by Raymie E. McKerrow (1989, *Communication Monographs*)<br>- *The Archaeology of Knowledge & The Discourse on Language* by Michel Foucault |
-| Feminist, Queer, and Decolonial Rhetorics | Recovers marginalized communicative traditions and critiques patriarchal, heteronormative, and Eurocentric assumptions within rhetorical history. | - *Unspoken: A Rhetoric of Silence* by Cheryl Glenn<br>- "Stories Take Place: A Rhetoric of Land, Space, and Memory" by Malea Powell (2012)<br>- *Queer Rhetorics: The Rhetorical Construction of Queer Identities* by Jonathan Alexander and Jacqueline Rhodes |
-| Public Sphere Theory and Counterpublics | Analyzes how democratic discourse circulates among citizens, the institutional barriers to equal participation, and how marginalized groups form counterpublics to challenge dominant discourse. | - *The Structural Transformation of the Public Sphere* by Jürgen Habermas<br>- "Rethinking the Public Sphere: A Contribution to the Critique of Actually Existing Democracy" by Nancy Fraser<br>- *Publics and Counterpublics* by Michael Warner |
+Investigates ideological, cultural, and philosophical expansions of rhetoric beyond classical persuasion into power dynamics, subjectivity, and symbolic action.
 
-## RHETORICAL CRITICISM & QUALITATIVE METHODOLOGIES
+Burkean Dramatism and Motives: [A Grammar of Motives (Kenneth Burke / University of California Press)](https://books.google.com/books?isbn=9780520015449) - Introduces the dramatistic pentad (act, scene, agent, agency, purpose) and terministic screens to analyze underlying human motives and division.
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| Ideographic, Metaphoric, and Narrative Criticism | Equips researchers with methodological toolkits to deconstruct political slogans (ideographs), conceptual metaphors, and pervasive cultural narratives. | - *Rhetorical Criticism: Exploration and Practice* by Sonja K. Foss<br>- "The 'Ideograph': A Link Between Rhetoric and Ideology" by Michael Calvin McGee (1980)<br>- *Metaphors We Live By* by George Lakoff and Mark Johnson |
-| Rhetorical Genre Studies (RGS) | Explores genre not as static textual forms, but as typified rhetorical actions responding to recurring social situations and shaping organizational behavior. | - "Genre as Social Action" by Carolyn R. Miller (1984, *Quarterly Journal of Speech*)<br>- *Shaping Written Knowledge: The Genre and Activity of the Experimental Article in Science* by Charles Bazerman |
-| Material, Spatial, and Affective Rhetorics | Expands criticism beyond texts to investigate how monuments, architecture, bodily presence, and sensory affect exert persuasive force in physical space. | - "Contemporary U.S. Memorial Sites as Exemplars of Rhetoric's Materiality" by Carole Blair (1999)<br>- *Ambient Rhetoric: The Attunements of Rhetorical Being* by Thomas Rickert |
-| Archival and Historiographic Methods | Trains scholars in the methodological and ethical practices of recovering historical rhetorics, conducting archival research, and challenging traditional historiographies. | - *Beyond the Archives: Research as a Lived Process* edited by Gesa E. Kirsch and Liz Rohan<br>- *Rhetoric Retold: Regendering the Tradition from Antiquity Through the Renaissance* by Cheryl Glenn |
+Critical Rhetoric and Discursive Formations: [The Archaeology of Knowledge (Michel Foucault / Vintage Books)](https://books.google.com/books?isbn=9780394711065) - Establishes the theoretical framework for examining how institutional power regimes dictate what can be articulated, known, and accepted as truth.
 
-## VISUAL, DIGITAL, AND COMPUTATIONAL RHETORICS
+Cultural and Feminist Rhetorics: [Rhetorical Listening: Identification, Gender, Whiteness (Krista Ratcliffe / Southern Illinois University Press)](https://books.google.com/books?isbn=9780809326693) - Expands classical rhetorical invention by theorizing listening as an active, conscious tactic for negotiating cross-cultural differences and power asymmetries.
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| Visual Rhetoric and Multimodality | Investigates the semiotic systems, design choices, and visual arguments embedded in photography, advertising, data visualizations, and graphic media. | - *Reading Images: The Grammar of Visual Design* by Gunther Kress and Theo van Leeuwen<br>- *Defining Visual Rhetorics* edited by Charles A. Hill and Marguerite Helmers<br>- "Framing the Study of Visual Rhetoric" by Sonja K. Foss |
-| Digital Rhetoric and Networked Publics | Analyzes how networked digital media transform traditional canons of delivery, circulation, remix, and audience engagement across internet platforms. | - [Digital Rhetoric: Theory, Method, Practice](https://www.digitalculture.org/books/digital-rhetoric/) by Douglas Eyman<br>- [Kairos: A Journal of Rhetoric, Technology, and Pedagogy](https://kairos.technorhetoric.net/) |
-| Algorithmic, Procedural, and AI Rhetoric | Examines how software rules, user interfaces, machine learning algorithms, and video games construct persuasive arguments and encode socio-political bias. | - *Persuasive Games: The Expressive Power of Videogames* by Ian Bogost<br>- *The Interface Effect* by Alexander R. Galloway<br>- *Ethical Programs: Hospitality and the Rhetorics of Software* by James J. Brown Jr. |
-| Computational Rhetoric and Textual Analytics | Explores the integration of computational text-mining, topic modeling, and digital humanities methods to analyze large-scale rhetorical corpora. | - *Network Sense: Methods for Visualizing a Discipline* by Derek N. Mueller<br>- "Probabilistic Topic Models" by David M. Blei (2012, *Communications of the ACM*) |
+Publics and Counterpublics: [Publics and Counterpublics (Michael Warner / Zone Books)](https://books.google.com/books?isbn=9781890951290) - Demonstrates how texts circulate to generate self-organized publics and how marginalized counterpublics contest dominant civic spheres.
 
-## RHETORIC OF SCIENCE, TECHNOLOGY, AND MEDICINE (RSTM)
+## Rhetorical Criticism & Qualitative Methodologies
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| Rhetoric of Science and Epistemology | Examines how scientific consensus, peer review, paradigms, and discovery claims rely upon rhetorical argumentation and boundary-work. | - *The Rhetoric of Science* by Alan G. Gross<br>- *Shaping Science with Rhetoric: The Cases of Dobzhansky, Schrödinger, and Wilson* by Leah Ceccarelli<br>- *The Structure of Scientific Revolutions* by Thomas S. Kuhn |
-| Rhetoric of Health and Medicine (RHM) | Analyzes the discursive construction of illness, clinical authority, patient-provider communication, diagnostic categories, and public health campaigns. | - *Health and the Rhetoric of Medicine: Diagnostic Realities* by Judy Z. Segal<br>- *Scientific Characters: Rhetoric, Politics, and Trust in Breast Cancer Research* by Lisa Keränen |
-| Environmental and Climate Rhetoric | Investigates how ecological crises, environmental policies, risk communication, and climate debates are framed and contested in public discourse. | - *Ecospeak: Rhetoric and Environmental Politics in America* by M. Jimmie Killingsworth and Jacqueline S. Palmer<br>- *Toxic Tourism: Rhetorics of Pollution, Travel, and Environmental Justice* by Phaedra C. Pezzullo |
+Provides advanced research frameworks and qualitative methods for deconstructing symbolic artifacts, material environments, institutional genres, and archival records.
 
-## APPLIED, CIVIC, AND INSTITUTIONAL RHETORIC
+Metaphoric Criticism and Cognitive Rhetoric: [Metaphors We Live By (George Lakoff & Mark Johnson / University of Chicago Press)](https://books.google.com/books?isbn=9780226468013) - Unpacks the conceptual metaphors that subconsciously structure human cognition, public discourse, and social argumentation.
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| Political Rhetoric and Deliberative Democracy | Critiques executive, legislative, and grassroots political discourse, studying how political actors mobilize symbols, define national identity, and frame civic crises. | - *Vernacular Voices: The Rhetoric of Publics and Public Spheres* by Gerard A. Hauser<br>- *The Idea of Public Reason Revisited* by John Rawls<br>- *Presidential Rhetoric and the Public Sphere* by David Zarefsky |
-| Legal Rhetoric and Judicial Hermeneutics | Examines the rhetoric of legal reasoning, statutory interpretation, courtroom advocacy, and the narrative construction of evidence and guilt. | - *The Legal Imagination* by James Boyd White<br>- *Legal Discourse: Studies in Linguistics, Rhetoric and Legal Analysis* by Peter Goodrich<br>- *Law's Empire* by Ronald Dworkin |
-| Critical Rhetorical Pedagogy and Writing Program Administration | Investigates how rhetorical theory informs critical literacy, antiracist writing assessment, writing program design, and emancipatory educational practice. | - *Pedagogy of the Oppressed* by Paulo Freire<br>- *Bootstraps: From an American Academic of Color* by Victor Villanueva<br>- *Antiracist Writing Assessment Ecologies: Teaching and Assessing Writing for a Socially Just Future* by Asao B. Inoue |
+Rhetorical Genre Studies: [Shaping Written Knowledge: The Genre and Activity of the Experimental Article in Science (Charles Bazerman / The WAC Clearinghouse)](https://wac.colostate.edu/books/landmarks/bazerman-shaping/) - A seminal open-access study showing how textual genres evolve as typified rhetorical responses to recurring institutional and social situations.
+
+Material and Spatial Rhetorics: [Ambient Rhetoric: The Attunements of Rhetorical Being (Thomas Rickert / University of Pittsburgh Press)](https://books.google.com/books?isbn=9780822962403) - Expands rhetorical analysis beyond human symbols to evaluate how physical spaces, material geography, and sensory environments exert persuasive force.
+
+Archival and Historiographic Methods: [Beyond the Archives: Research as a Lived Process (Gesa E. Kirsch & Liz Rohan, Eds. / Southern Illinois University Press)](https://books.google.com/books?isbn=9780809328406) - Explores the methodological, reflexive, and ethical practices involved in retrieving historical voices and reconstructing lost rhetorical traditions.
+
+## Visual, Digital, and Procedural Rhetorics
+
+Investigates how persuasive and communicative power operates across visual artifacts, user interfaces, procedural code, and computational corpora.
+
+Visual Semiotics and Multimodality: [Reading Images: The Grammar of Visual Design (Gunther Kress & Theo van Leeuwen / Routledge)](https://books.google.com/books?isbn=9780415672573) - Provides a systematic semiotic grammar to analyze visual composition, spatial vectors, and viewer positioning in multimodal artifacts.
+
+Digital Rhetorical Theory: [Digital Rhetoric: Theory, Method, Practice (Douglas Eyman / University of Michigan Press)](https://doi.org/10.3998/dh.13030181.0001.001) - Synthesizes classical rhetorical principles with digital media scholarship to analyze circulation, digital delivery, and networked interactivity in an open-access format.
+
+Procedural Rhetoric and Software Systems: [Persuasive Games: The Expressive Power of Videogames (Ian Bogost / MIT Press)](https://books.google.com/books?isbn=9780262514880) - Defines procedural rhetoric, examining how rule-based computations, game mechanics, and software processes mount arguments about the real world.
+
+Computational Corpus Rhetoric: [Network Sense: Methods for Visualizing a Discipline (Derek N. Mueller / The WAC Clearinghouse)](https://wac.colostate.edu/books/writing/network/) - An open-access guide demonstrating how to use distant reading, text-mining, and network visualizations to identify macro-level patterns across rhetorical corpora.
+
+## Rhetoric of Science, Technology, and Medicine
+
+Examines how scientific consensus, clinical authority, environmental crises, and technological artifacts are rhetorically negotiated and established.
+
+Epistemic Rhetoric and Scientific Argumentation: [Shaping Science with Rhetoric: The Cases of Dobzhansky, Schrödinger, and Wilson (Leah Ceccarelli / University of Chicago Press)](https://books.google.com/books?isbn=9780226099071) - Analyzes how scientific pioneers deployed interdisciplinary rhetorical strategies to forge paradigm shifts and build consensus across conflicting scientific fields.
+
+Rhetoric of Health and Medicine: [Health and the Rhetoric of Medicine: Diagnostic Realities (Judy Z. Segal / Southern Illinois University Press)](https://books.google.com/books?isbn=9780809328666) - Investigates how diagnostic criteria, clinical authority, and illness narratives function as persuasive interactions between patients and healthcare systems.
+
+Environmental and Climate Rhetoric: [Toxic Tourism: Rhetorics of Pollution, Travel, and Environmental Justice (Phaedra C. Pezzullo / University of Alabama Press)](https://books.google.com/books?isbn=9780817355876) - Explores how community advocates deploy participatory rhetorical strategies and toxic tours to expose environmental racism and influence public policy.
+
+Rhetoric of Technology and Technical Communication: [User-Centered Technology: A Rhetorical Theory for Computers and Other Mundane Artifacts (Robert R. Johnson / State University of New York Press)](https://books.google.com/books?isbn=9780791439326) - Connects classical techne with modern usability to examine how technological tools, system documentation, and interface designs mediate power between makers and users.
+
+## Civic, Legal, and Political Rhetorics
+
+Applies rhetorical frameworks to examine democratic deliberation, grassroots mobilization, legal jurisprudence, and institutional public affairs.
+
+Deliberative Democracy and Vernacular Publics: [Vernacular Voices: The Rhetoric of Publics and Public Spheres (Gerard A. Hauser / University of South Carolina Press)](https://books.google.com/books?isbn=9781643362854) - Examines how everyday citizen exchanges form an associative public sphere that shapes public opinion independently of state institutions.
+
+Social Movement Rhetoric and Activist Mobilization: [Persuasion and Social Movements (Charles J. Stewart, Craig Allen Smith & Robert E. Denton, Jr. / Waveland Press)](https://books.google.com/books?isbn=9781577667773) - Outlines the rhetorical tactics, lifecycle stages, and expressive strategies that grassroots coalitions use to disrupt institutions and achieve policy change.
+
+Legal Rhetoric and Constitutive Jurisprudence: [The Legal Imagination (James Boyd White / University of Chicago Press)](https://books.google.com/books?isbn=9780226894935) - Analyzes the law as a constitutive rhetorical culture where legal actors construct community, interpret statutory narrative, and establish moral meaning.

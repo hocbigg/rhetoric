@@ -1,43 +1,56 @@
 # Projects
 
-A curated directory of step-by-step methodological guides, analytical walkthroughs, and open project templates for practicing Rhetoric through hands-on construction and critique.
+> "What I cannot create, I do not understand." — Richard Feynman
 
-> *What I cannot create, I do not understand — Richard Feynman.*
+* [Persuasive Speeches](#deliver-your-own-persuasive-speeches)
+* [Rhetorical Analyses](#write-your-own-rhetorical-analyses)
+* [Opinion Editorials](#write-your-own-opinion-editorials)
+* [Multimodal Essays](#produce-your-own-multimodal-essays)
+* [Rhetorical Apologias](#craft-your-own-rhetorical-apologias)
+* [Policy Memos](#write-your-own-policy-memos)
+* [Advocacy Letters](#write-your-own-advocacy-letters)
+* [Corpus Analyses](#conduct-your-own-corpus-analyses)
 
-Select a tangible artifact or analysis to build below to discover underlying rhetorical frameworks through direct application.
+## Deliver your own persuasive speeches
 
-## Textual & Rhetorical Criticism
+- [Speech Outlining Guide (Department of Communication, University of Pittsburgh)](https://www.comm.pitt.edu/outlining)
+- [Persuasive Speaking Guide (Department of Communication, University of Pittsburgh)](https://www.comm.pitt.edu/persuasive-speaking)
+- [Tips for a Persuasive Speech (Toastmasters International)](https://www.toastmasters.org/resources/tips-for-a-persuasive-speech)
 
-- [How to Write a Rhetorical Analysis: Step-by-Step Guide](https://owl.purdue.edu/owl/general_writing/academic_writing/rhetorical_situations/elements_of_rhetorical_situations.html) (Purdue OWL)
-- [How Arguments Work: A Guide to Writing and Analyzing Texts in College](https://open.umn.edu/opentextbooks/textbooks/how-arguments-work-a-guide-to-writing-and-analyzing-texts-in-college) (Open Textbook Library)
-- [Logic and Structure in Argumentative Writing](https://owl.purdue.edu/owl/general_writing/academic_writing/logic_in_argumentative_writing/index.html) (Purdue OWL)
-- [Classical Argument Structure and Proofs](https://owl.purdue.edu/owl/general_writing/academic_writing/historical_perspectives_on_argumentation/classical_argument.html) (Purdue OWL)
+## Write your own rhetorical analyses
 
-## Public Address & Deliberative Speaking
+- [Backpacks vs. Briefcases: Steps Toward Rhetorical Analysis (Laura Bolin Carroll / Writing Spaces)](https://writingspaces.org/volume-1/)
+- [How Arguments Work: A Guide to Writing and Analyzing Texts in College (Anna Mills / Open Textbook Library)](https://open.umn.edu/opentextbooks/textbooks/how-arguments-work-a-guide-to-writing-and-analyzing-texts-in-college)
+- [Strategies for Essay Writing (Harvard College Writing Center)](https://writingcenter.fas.harvard.edu/pages/strategies-essay-writing)
 
-- [Writing and Delivering Speeches: A Comprehensive Guide](https://writingcenter.unc.edu/tips-and-tools/speeches/) (UNC Writing Center)
-- [How to Write and Deliver a Persuasive Speech](https://www.toastmasters.org/resources/how-to-write-and-deliver-a-persuasive-speech) (Toastmasters International)
-- [Audience Analysis and Speech Preparation](https://owl.purdue.edu/owl/general_writing/academic_writing/rhetorical_situations/elements_of_rhetorical_situations.html) (Purdue OWL)
+## Write your own opinion editorials
 
-## Civic Discourse, Op-Eds & Policy Advocacy
+- [Op-Ed Writing: The Basics (The OpEd Project)](https://www.theopedproject.org/resources)
+- [How to Write an Op-Ed or Column (Communications Program, Harvard Kennedy School)](https://www.hks.harvard.edu/more/communications-program)
 
-- [How to Write a Policy Brief: Principles and Structure](https://writingcenter.unc.edu/tips-and-tools/policy-briefs/) (UNC Writing Center)
-- [Writing an Op-Ed or Column: Framework and Pitching Guide](https://shorensteincenter.org/wp-content/uploads/2012/07/HO_NEW_HOW-TO-WRITE-AN-OPED-OR-COLUMN.pdf) (Harvard Kennedy School, Shorenstein Center)
-- [Developing an Effective Position Paper](https://owl.purdue.edu/owl/general_writing/academic_writing/logic_in_argumentative_writing/index.html) (Purdue OWL)
+## Produce your own multimodal essays
 
-## Visual, Multimodal & Digital Artifacts
+- [An Introduction to and Strategies for Multimodal Composing (Melanie Gagich / Writing Spaces)](https://writingspaces.org/volume-3/)
+- [Understanding Visual Rhetoric (Jenae Cohn / Writing Spaces)](https://writingspaces.org/volume-3/)
+- [Organizing Your Analysis of Visual Documents (Purdue OWL)](https://owl.purdue.edu/owl/general_writing/visual_rhetoric/analyzing_visual_documents/organizing_your_analysis.html)
 
-- [Visual Rhetoric: Analyzing Visual Documents](https://owl.purdue.edu/owl/general_writing/visual_rhetoric/analyzing_visual_documents/index.html) (Purdue OWL)
-- [Organizing Your Visual Analysis Essay](https://owl.purdue.edu/owl/general_writing/visual_rhetoric/analyzing_visual_documents/organizing_your_analysis.html) (Purdue OWL)
-- [Designing Effective Slide Presentations](https://owl.purdue.edu/owl/general_writing/visual_rhetoric/designing_effective_powerpoint_presentations/index.html) (Purdue OWL)
-- [Webtext Composition and Multimodal Scholarship](https://kairos.technorhetoric.net/) (Kairos: A Journal of Rhetoric, Technology, and Pedagogy)
+## Craft your own rhetorical apologias
 
-## Computational Rhetoric & Text Analysis
+- [Image Repair Discourse and Crisis Communication (William L. Benoit / Public Relations Review)](https://doi.org/10.1016/S0363-8111(97)90023-0)
+- [Crisis Management and Communications (Institute for Public Relations)](https://instituteforpr.org/crisis-management-and-communications/)
 
-- [Corpus Analysis and Concordance with AntConc](https://programminghistorian.org/en/lessons/corpus-analysis-with-antconc) (Programming Historian)
-- [Getting Started with Topic Modeling and MALLET for Text Corpora](https://programminghistorian.org/en/lessons/topic-modeling-and-mallet) (Programming Historian)
+## Write your own policy memos
 
-## Archival Recovery & Primary Source Inquiry
+- [Policy Memos Resource (Harvard Kennedy School)](https://policymemos.hks.harvard.edu/)
+- [How to Write a Policy Memo (Communications Program, Harvard Kennedy School)](https://www.hks.harvard.edu/more/communications-program)
 
-- [Primary Source Analysis Tool and Specialized Teacher's Guides](https://www.loc.gov/programs/teachers/getting-started-with-primary-sources/guides/) (Library of Congress)
-- [Analyzing Political Cartoons and Historical Printed Ephemera](https://www.loc.gov/programs/teachers/getting-started-with-primary-sources/guides/) (Library of Congress)
+## Write your own advocacy letters
+
+- [Writing Letters to Elected Officials (Community Tool Box, University of Kansas)](https://ctb.ku.edu/en/table-of-contents/advocacy/direct-action/letters-to-elected-officials/main)
+- [Writing Letters to the Editor (Community Tool Box, University of Kansas)](https://ctb.ku.edu/en/table-of-contents/advocacy/direct-action/letters-to-the-editor/main)
+
+## Conduct your own corpus analyses
+
+- [Corpus Analysis with AntConc (Heather Froehlich / The Programming Historian)](https://programminghistorian.org/en/lessons/corpus-analysis-with-antconc)
+- [Corpus Analysis with Voyant Tools (Silvia Gutiérrez De la Torre / The Programming Historian)](https://programminghistorian.org/en/lessons/corpus-analysis-with-voyant-tools)
+- [Introduction to Stylometry with Python (François Dominic Laramée / The Programming Historian)](https://programminghistorian.org/en/lessons/introduction-to-stylometry-with-python)
