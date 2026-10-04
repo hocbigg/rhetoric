@@ -1,177 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Hocbigg - Rhetoric</title>
-<link rel="stylesheet" href="/rhetoric/style.css">
-<meta name="description" content="Path to a free self-taught education in Rhetoric!">
+  <title>Hocbigg - Rhetoric</title>
+  <meta name="description" content="Path to a free self-taught education in Rhetoric!">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/rhetoric/">
+  <link rel="canonical" href="https://hocbigg.github.io/rhetoric/">
+  <meta property="og:title" content="Hocbigg - Rhetoric">
+  <meta property="og:description" content="Path to a free self-taught education in Rhetoric!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/rhetoric/">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Hocbigg - Rhetoric">
-<meta property="og:description" content="Path to a free self-taught education in Rhetoric!">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/rhetoric/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/rhetoric/">Rhetoric</a>
-<a href="/rhetoric/advanced_topics.html">Advanced Topics</a>
-<a href="/rhetoric/projects.html">Projects</a>
-<a href="/rhetoric/extras/courses.html">Extra Courses</a>
-<a href="/rhetoric/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/rhetoric/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/rhetoric/">Rhetoric</a></li>
+      <li><a href="/rhetoric/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/rhetoric/projects.html">Projects</a></li>
+      <li><a href="/rhetoric/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/rhetoric/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/rhetoric" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
+  <main id="main-content">
+    <article>
 <header class="page-header">
-  <img src="/images/logo.png" alt="">
+  <img src="/images/logo.png" alt="Hocbigg logo">
   <h1>Hocbigg - Rhetoric</h1>
+  <p class="page-subtitle">Path to a free self-taught education in Rhetoric!</p>
+  <p class="last-updated"><small>Last updated on: <time datetime="2026-09-29">2026-09-29</time></small></p>
 </header>
-
-<h1 id="contents">Contents</h1>
+<h2 id="introduction">Introduction</h2>
+<p>While popular culture often reduces rhetoric to empty political spin or deceptive salesmanship, the discipline itself is the systematic study and practice of human symbolic influence. Originating in ancient civic life, rhetoric examines how language, argument, and aesthetic form coordinate human action, negotiate social conflict, and establish public truth. For the independent learner, mastering rhetoric provides both a critical defense against manipulative discourse and a generative toolkit for crafting clear, persuasive, and ethical communication.</p>
+<p>This curriculum is designed for self-directed learners starting from scratch. It requires no background in philosophy, linguistics, or communication studies, nor does it assume access to an academic institution or instructor feedback. Whether your goal is to deconstruct public debates, sharpen your critical reasoning, or produce compelling written and spoken arguments, this program provides the foundational frameworks necessary to engage the field with confidence.</p>
+<h3 id="structure-and-progression">Structure and Progression</h3>
+<p>Rhetoric unites two complementary traditions: <strong>critical analysis</strong> (diagnosing how discourse shapes audiences) and <strong>productive craft</strong> (generating effective written and spoken expression). The curriculum is structured to build from theoretical foundations to practical application:</p>
 <ul>
-<li><a href="#summary">Summary</a></li>
-<li><a href="#communities">Communities</a></li>
-<li><a href="#curriculum">Curriculum</a></li>
-<li><a href="#code-of-conduct">Code of conduct</a></li>
+<li><strong>Theoretical Foundations:</strong> Begin with Foundations of Rhetorical Theory, Classical Rhetoric: Greek and Roman Traditions, and The Canons of Rhetoric and Stasis Theory. These subjects establish the essential vocabulary of the art—the classical appeals (<em>ethos</em>, <em>pathos</em>, <em>logos</em>), situational dynamics (<em>kairos</em>, exigence, audience), the five generative canons, and stasis framing.</li>
+<li><strong>The Modern Turn:</strong> Move into Modern and Contemporary Rhetorical Theory to explore how twentieth-century thinkers broadened rhetoric beyond classical oratory into symbolic action, identification, and ideological critique.</li>
+<li><strong>Critical Methodologies:</strong> Transition to Argumentation, Practical Reasoning, and Informal Logic alongside Rhetorical Criticism and Analysis. Here, you will acquire the tools to diagram practical arguments, detect fallacies, and conduct systematic critique of speeches, essays, and public media.</li>
+<li><strong>Productive Craft:</strong> Conclude with the expressive subjects: Style, Prose Clarity, and Figures of Speech, Oral Delivery and Public Address, and Rhetorical Composition and Academic Discourse. While these productive domains build naturally upon the theoretical modules, you may study them in parallel if you have immediate goals in public speaking or essay composition.</li>
 </ul>
-<h1 id="summary">Summary</h1>
-<p>The Rhetoric curriculum is a <strong>complete education in Rhetoric</strong> using online materials.</p>
-<p>Note: When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
-they belong in <a href="extras/courses.html">extras/courses</a>, <a href="extras/readings.html">extras/readings</a>.</p>
-<p><strong><a href="/CONTRIBUTING.html">How to contribute</a></strong></p>
-<h1 id="communities">Communities</h1>
+<p>Within each subject, resources are paired to offer flexibility. Typically, an open-access digital textbook is provided alongside a standard print survey, supplemented by an interactive video course or a foundational primary text. You do not need to study every resource listed for a given subject; choose between the open-access and print alternatives based on your preference, and use the accompanying courses or primary readings to enrich your study.</p>
+<h3 id="beyond-the-core">Beyond the Core</h3>
+<p>This curriculum covers only the mandatory foundational subjects that every student of rhetoric should master before specializing. It intentionally leaves out advanced subfields such as visual semiotics, legal jurisprudence, environmental discourse, and the rhetoric of science. </p>
+<p>Once you have worked through these core foundations, you can branch out into specialized domains through <a href="advanced_topics.html">Advanced Topics</a>, apply your skills to concrete deliverables through <a href="projects.html">Projects</a>, explore field-defining monographs and essays in <a href="extras/readings.html">Readings</a>, or consult extended audiovisual lecture series in <a href="extras/courses.html">Courses</a>.</p>
+<h3 id="communities">Communities</h3>
 <ul>
 <li>Subreddits:</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/Rhetoric/">r/Rhetoric</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/rhetcomp/">r/rhetcomp</a></li>
-<li>You can also interact through <a target="_blank" rel="noopener noreferrer" href="https://github.com/hocbigg/rhetoric/issues">GitHub issues</a>. If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more <a href="/CONTRIBUTING.html">here</a>.</li>
+<li><a href="https://www.reddit.com/r/Rhetoric/" target="_blank" rel="noopener noreferrer">r/Rhetoric</a></li>
+<li><a href="https://www.reddit.com/r/rhetcomp/" target="_blank" rel="noopener noreferrer">r/rhetcomp</a></li>
+<li>You can also interact through <a href="https://github.com/hocbigg/rhetoric/issues" target="_blank" rel="noopener noreferrer">GitHub issues</a>. If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more <a href="/CONTRIBUTING.html">here</a>.</li>
 <li>Join our Discord server (for discussions around this and other curricula):
-  <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/KHqAv4Nvm5"><img alt="discord link" src="/assets/discord.png" /></a></li>
+  <a href="https://discord.gg/KHqAv4Nvm5" target="_blank" rel="noopener noreferrer"><img alt="discord link" src="/assets/discord.png"></a></li>
 </ul>
-<h1 id="curriculum">Curriculum</h1>
-<ul>
-<li><a href="#foundations-of-rhetoric">FOUNDATIONS OF RHETORIC</a></li>
-<li><a href="#argumentation--logic-for-rhetoric">ARGUMENTATION &amp; LOGIC FOR RHETORIC</a></li>
-<li><a href="#classical-rhetoric--core-concepts">CLASSICAL RHETORIC &amp; CORE CONCEPTS</a></li>
-<li><a href="#style-delivery-and-composition">STYLE, DELIVERY, AND COMPOSITION</a></li>
-</ul>
-<h2 id="how-to-use-this-curriculum">How to Use This Curriculum</h2>
-<h3 id="core-sections">Core Sections</h3>
-<p>Start with these four sections in this exact order to develop a clear, connected understanding of rhetoric's essentials:</p>
-<ol>
-<li>Foundations of Rhetoric – Begin here to learn the basic building blocks.</li>
-<li>Argumentation &amp; Logic for Rhetoric – Move to this next to understand how arguments are constructed and evaluated.</li>
-<li>Classical Rhetoric &amp; Core Concepts – Follow with this to connect historical roots to modern use.</li>
-<li>Style, Delivery, and Composition – Finish the core here to practice putting ideas into effective writing and speaking.</li>
-</ol>
-<h2 id="foundations-of-rhetoric">FOUNDATIONS OF RHETORIC</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Resources</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1. What Is Rhetoric?</td>
-<td>- <a target="_blank" rel="noopener noreferrer" href="https://www.researchgate.net/publication/339189558_The_Short_History_of_Rhetorical_Theory">A Short History of Rhetorical Theory</a><br>- <a target="_blank" rel="noopener noreferrer" href="https://www.edx.org/learn/rhetoric/harvard-university-rhetoric-the-art-of-persuasive-writing-and-public-speaking">Rhetoric: The Art of Persuasive Writing and Public Speaking</a></td>
-</tr>
-<tr>
-<td>2. The Rhetorical Situation</td>
-<td>- <a target="_blank" rel="noopener noreferrer" href="https://files.commons.gc.cuny.edu/wp-content/blogs.dir/8310/files/2021/08/Bitzer1968-the-rhetorical-situation.pdf">Lloyd Bitzer, “The Rhetorical Situation”</a><br>- <a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/21w-747-classical-rhetoric-and-modern-political-discourse-fall-2009/">Classical Rhetoric and Modern Political Discourse</a></td>
-</tr>
-<tr>
-<td>3. Audience, Purpose, and Context</td>
-<td>- <a target="_blank" rel="noopener noreferrer" href="https://open.umn.edu/opentextbooks/textbooks/829">Informed Arguments: A Guide to Writing and Research</a><br>- <a target="_blank" rel="noopener noreferrer" href="https://www.classcentral.com/course/writing2-633">Writing II: Rhetorical Composing</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="argumentation-logic-for-rhetoric">ARGUMENTATION &amp; LOGIC FOR RHETORIC</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Resources</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>4. Claims, Reasons, and Evidence</td>
-<td>- <a target="_blank" rel="noopener noreferrer" href="https://open.umn.edu/opentextbooks/textbooks/829">Informed Arguments: A Guide to Writing and Research</a><br>- <a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/11-225-argumentation-and-communication-fall-2006/">Argumentation and Communication</a></td>
-</tr>
-<tr>
-<td>5. Toulmin Model &amp; Informal Logic</td>
-<td>- <a target="_blank" rel="noopener noreferrer" href="https://www.cambridge.org/core/books/uses-of-argument/26CF801BC12004587B66778297D5567C">The Uses of Argument (updated edition excerpts and info)</a><br>- <a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/11-225-argumentation-and-communication-fall-2006/">Argumentation and Communication</a></td>
-</tr>
-<tr>
-<td>6. Fallacies, Bias, and Ethical Argument</td>
-<td>- <a target="_blank" rel="noopener noreferrer" href="https://owl.purdue.edu/owl/general_writing/academic_writing/logic_in_argumentative_writing/fallacies.html">Logical Fallacies</a><br>- <a target="_blank" rel="noopener noreferrer" href="https://www.edx.org/learn/rhetoric/harvard-university-rhetoric-the-art-of-persuasive-writing-and-public-speaking">Rhetoric: The Art of Persuasive Writing and Public Speaking</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="classical-rhetoric-core-concepts">CLASSICAL RHETORIC &amp; CORE CONCEPTS</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Resources</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>7. Greek Foundations</td>
-<td>- <a target="_blank" rel="noopener noreferrer" href="http://classics.mit.edu/Aristotle/rhetoric.html">Aristotle, Rhetoric</a><br>- <a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/21w-747-classical-rhetoric-and-modern-political-discourse-fall-2009/">Classical Rhetoric and Modern Political Discourse</a></td>
-</tr>
-<tr>
-<td>8. Roman Rhetoric &amp; Education</td>
-<td>- <a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/21w-747-classical-rhetoric-and-modern-political-discourse-fall-2009/">Classical Rhetoric and Modern Political Discourse</a></td>
-</tr>
-<tr>
-<td>9. The Five Canons &amp; Stasis Theory</td>
-<td>- <a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/classicalrhetori0000corb">Classical Rhetoric for the Modern Student</a><br>- <a target="_blank" rel="noopener noreferrer" href="https://owl.purdue.edu/owl/general_writing/academic_writing/logic_in_argumentative_writing/index.html">Stasis Theory</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="style-delivery-and-composition">STYLE, DELIVERY, AND COMPOSITION</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Resources</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>10. Style and Clarity</td>
-<td>- <a target="_blank" rel="noopener noreferrer" href="https://books.google.com/books/about/Style.html?id=example">Style: Lessons in Clarity and Grace</a><br>- <a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/21w-747-classical-rhetoric-and-modern-political-discourse-fall-2009/">Classical Rhetoric and Modern Political Discourse</a></td>
-</tr>
-<tr>
-<td>11. Delivery, Voice, and Presence</td>
-<td>- <a target="_blank" rel="noopener noreferrer" href="https://oyc.yale.edu/english/engl-291">Public Speaking (Yale Open Courses)</a></td>
-</tr>
-<tr>
-<td>12. Writing as Rhetorical Practice</td>
-<td>- <a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/writingwithoutte0000elbo">Writing Without Teachers</a><br>- <a target="_blank" rel="noopener noreferrer" href="https://www.classcentral.com/course/writing2-633">Writing II: Rhetorical Composing</a></td>
-</tr>
-</tbody>
-</table>
-<h1 id="code-of-conduct">Code of conduct</h1>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/hocbigg/code-of-conduct">Hocbigg's code of conduct</a>.</p>
-</article>
-</main>
+<h2 id="curriculum">Curriculum</h2>
+<h3 id="foundations-of-rhetorical-theory">Foundations of Rhetorical Theory</h3>
+<p>Introduces the foundational definitions, scope, and core models of rhetoric, including the rhetorical situation, kairos, and the artistic proofs of ethos, pathos, and logos.</p>
+<p><a href="https://open.lib.umn.edu/rhetoricaltheory/" target="_blank" rel="noopener noreferrer">Reading Rhetorical Theory: Speech, Representation, and Power (University of Minnesota Libraries Publishing/Atilla Hallsby)</a> - Serves as the primary open-access textbook for this unit, offering an accessible conceptual introduction to rhetorical definitions, situations, and symbolic action.</p>
+<p><a href="https://books.google.com/books?isbn=9781032813141" target="_blank" rel="noopener noreferrer">The History and Theory of Rhetoric: An Introduction (Routledge/James A. Herrick &amp; Luke Winslow)</a> - A comprehensive print alternative to Hallsby above, providing a deeper chronological survey of rhetorical thought from antiquity to the modern era.</p>
+<p><a href="https://www.edx.org/learn/rhetoric/harvard-university-rhetoric-the-art-of-persuasive-writing-and-public-speaking" target="_blank" rel="noopener noreferrer">Rhetoric: The Art of Persuasive Writing and Public Speaking (Harvard University / edX)</a> - An interactive audiovisual complement to either textbook, providing video lectures and short exercises in classical appeals and persuasive speech structure.</p>
+<p><a href="https://files.commons.gc.cuny.edu/wp-content/blogs.dir/8310/files/2021/08/Bitzer1968-the-rhetorical-situation.pdf" target="_blank" rel="noopener noreferrer">The Rhetorical Situation (Philosophy &amp; Rhetoric/Lloyd F. Bitzer)</a> - The foundational primary essay to read alongside the introductory modules to examine directly the triad of exigence, audience, and constraints.</p>
+<h3 id="classical-rhetoric-greek-and-roman-traditions">Classical Rhetoric: Greek and Roman Traditions</h3>
+<p>Traces the historical emergence of rhetoric in ancient Greece and Rome, examining the debates among the Sophists, Plato, and Aristotle, alongside the civic educational systems of Cicero and Quintilian.</p>
+<p><a href="https://books.google.com/books?isbn=9781319031015" target="_blank" rel="noopener noreferrer">The Rhetorical Tradition: Readings from Classical Times to the Present (Bedford/St. Martin's/Patricia Bizzell &amp; Bruce Herzberg, Eds.)</a> - The definitive primary-source reader for this unit, gathering foundational selections from Gorgias, Plato, Aristotle, Cicero, and Quintilian with historical introductions.</p>
+<p><a href="http://classics.mit.edu/Aristotle/rhetoric.html" target="_blank" rel="noopener noreferrer">Rhetoric (MIT Internet Classics Archive/Aristotle, trans. W. Rhys Roberts)</a> - A complete, freely accessible public-domain translation of Aristotle's treatise; use this as a direct open-access alternative to purchasing the Bizzell and Herzberg anthology.</p>
+<p><a href="https://plato.stanford.edu/entries/aristotle-rhetoric/" target="_blank" rel="noopener noreferrer">Aristotle's Rhetoric (Stanford Encyclopedia of Philosophy/Christof Rapp)</a> - A peer-reviewed philosophical guide to read alongside Aristotle's text to clarify his technical definitions of proofs, enthymemes, and emotional states.</p>
+<p><a href="https://ocw.mit.edu/courses/21w-747-classical-rhetoric-and-modern-political-discourse-fall-2009/" target="_blank" rel="noopener noreferrer">Classical Rhetoric and Modern Political Discourse (MIT OpenCourseWare)</a> - A structured open course syllabus with reading notes and exercises that demonstrate how Greco-Roman rhetorical concepts apply to modern civic debates.</p>
+<h3 id="the-canons-of-rhetoric-and-stasis-theory">The Canons of Rhetoric and Stasis Theory</h3>
+<p>Examines the generative architecture of classical rhetoric—invention, arrangement, style, memory, and delivery—alongside stasis theory for diagnosing issues and framing disputes.</p>
+<p><a href="https://books.google.com/books?isbn=9780195115420" target="_blank" rel="noopener noreferrer">Classical Rhetoric for the Modern Student (Oxford University Press/Edward P. J. Corbett &amp; Robert J. Connors)</a> - The core manual for this unit, translating classical invention heuristics, the five canons, and formal topics into modern analytical and writing techniques.</p>
+<p><a href="https://pressbooks.calstate.edu/writingargumentsinstem/" target="_blank" rel="noopener noreferrer">Writing Arguments in STEM: Introduction to Stasis Theory (California Polytechnic State University / CalState Pressbooks)</a> - A concise open-access module that complements Corbett and Connors by breaking down the four stasis questions with direct analytical examples.</p>
+<h3 id="modern-and-contemporary-rhetorical-theory">Modern and Contemporary Rhetorical Theory</h3>
+<p>Explores the twentieth-century paradigm shift that expanded rhetoric from persuasive speechmaking into symbolic action, identification, ideological critique, and public sphere theory.</p>
+<p><a href="https://open.lib.umn.edu/rhetoricaltheory/" target="_blank" rel="noopener noreferrer">Reading Rhetorical Theory: Speech, Representation, and Power (University of Minnesota Libraries Publishing/Atilla Hallsby)</a> - The recommended starting text for this unit; read Parts III and IV for clear secondary overviews of Kenneth Burke, ideological criticism, and counterpublics.</p>
+<p><a href="https://books.google.com/books?isbn=9780520015463" target="_blank" rel="noopener noreferrer">A Rhetoric of Motives (University of California Press/Kenneth Burke)</a> - Read after Hallsby's introductory chapters to engage Burke's foundational formulation of identification, division, and dramatism in primary form.</p>
+<p><a href="https://books.google.com/books?isbn=9781319031015" target="_blank" rel="noopener noreferrer">The Rhetorical Tradition: Readings from Classical Times to the Present (Bedford/St. Martin's/Patricia Bizzell &amp; Bruce Herzberg, Eds.)</a> - A complementary primary-source anthology containing key 20th-century selections from I. A. Richards, Chaïm Perelman, and Jürgen Habermas.</p>
+<h3 id="argumentation-practical-reasoning-and-informal-logic">Argumentation, Practical Reasoning, and Informal Logic</h3>
+<p>Analyzes the architecture of non-formal arguments, the Toulmin model of claims and warrants, fallacious reasoning, and the ethical evaluation of persuasive evidence.</p>
+<p><a href="https://books.google.com/books?isbn=9780134759746" target="_blank" rel="noopener noreferrer">Writing Arguments: A Rhetoric with Readings (Pearson/John D. Ramage, John C. Bean &amp; June Johnson)</a> - The primary applied textbook for this unit, combining Toulmin argument architecture, stasis inquiry, and persuasive drafting strategies.</p>
+<p><a href="https://www.coursera.org/learn/understanding-arguments" target="_blank" rel="noopener noreferrer">Think Again I: How to Understand Arguments (Duke University / Coursera)</a> - An interactive video-based complement to Ramage et al., focusing on premise reconstruction, deductive validity, and fallacy detection.</p>
+<p><a href="https://books.google.com/books?isbn=9780521534833" target="_blank" rel="noopener noreferrer">The Uses of Argument (Cambridge University Press/Stephen E. Toulmin)</a> - An influential philosophical monograph to read as an advanced conceptual deep-dive into the origin and theory of warrants, backing, and field-dependent logic.</p>
+<h3 id="rhetorical-criticism-and-analysis">Rhetorical Criticism and Analysis</h3>
+<p>Develops systematic methodologies to deconstruct, interpret, and critically evaluate the persuasive strategies of speeches, written essays, and cultural artifacts.</p>
+<p><a href="https://writingspaces.org/wp-content/uploads/2020/09/carroll-backpacks-vs-briefcases.pdf" target="_blank" rel="noopener noreferrer">Backpacks vs. Briefcases: Steps Toward Rhetorical Analysis (Writing Spaces/Laura Bolin Carroll)</a> - An accessible, open-access introductory chapter to read first, illustrating how to deconstruct rhetorical appeals in everyday culture and media.</p>
+<p><a href="https://books.google.com/books?isbn=9781478634898" target="_blank" rel="noopener noreferrer">Rhetorical Criticism: Exploration and Practice (Waveland Press/Sonja K. Foss)</a> - Builds on Carroll's introduction as the definitive core textbook, providing systematic procedures for neo-Aristotelian, narrative, pentadic, and ideological criticism.</p>
+<h3 id="style-prose-clarity-and-figures-of-speech">Style, Prose Clarity, and Figures of Speech</h3>
+<p>Investigates micro-rhetoric at the sentence level, focusing on syntactic clarity, cohesive flow, and classical figures of speech, including schemes and tropes.</p>
+<p><a href="https://books.google.com/books?isbn=9780134080413" target="_blank" rel="noopener noreferrer">Style: Lessons in Clarity and Grace (Pearson/Joseph M. Williams &amp; Joseph Bizup)</a> - The primary textbook for sentence-level style, showing how to manage grammatical agency, cohesion, and information flow to maximize clarity.</p>
+<p><a href="https://books.google.com/books?isbn=9781880393024" target="_blank" rel="noopener noreferrer">Figures of Speech: 60 Ways to Turn a Phrase (Routledge/Arthur Quinn)</a> - A complementary guide focusing on rhetorical ornamentation, illustrating sixty classical schemes and tropes with historical and literary examples.</p>
+<h3 id="oral-delivery-and-public-address">Oral Delivery and Public Address</h3>
+<p>Applies rhetorical principles to oral delivery, focusing on vocal variety, physical presence, audience adaptation, and the ethics of public address.</p>
+<p><a href="https://milneopentextbooks.org/stand-up-speak-out-the-practice-and-ethics-of-public-speaking/" target="_blank" rel="noopener noreferrer">Stand Up, Speak Out: The Practice and Ethics of Public Speaking (Milne Open Textbooks/Jason S. Wrench et al.)</a> - The primary open-access textbook for this unit, offering comprehensive instruction on audience analysis, speech structuring, delivery mechanics, and rhetorical ethics.</p>
+<p><a href="https://books.google.com/books?isbn=9781259924606" target="_blank" rel="noopener noreferrer">The Art of Public Speaking (McGraw-Hill Education/Stephen E. Lucas)</a> - A widely used commercial alternative to <em>Stand Up, Speak Out</em>, noted for its detailed speech outlines and step-by-step preparation checklists.</p>
+<p><a href="https://www.coursera.org/learn/public-speaking" target="_blank" rel="noopener noreferrer">Introduction to Public Speaking (University of Washington / Coursera)</a> - An applied audiovisual workshop to use alongside either textbook, featuring speech demonstrations and exercises that build physical delivery confidence.</p>
+<h3 id="rhetorical-composition-and-academic-discourse">Rhetorical Composition and Academic Discourse</h3>
+<p>Integrates rhetorical theory into written composition, focusing on joining scholarly conversations, structuring written discourse, and revising for audience impact.</p>
+<p><a href="https://books.google.com/books?isbn=9780393631678" target="_blank" rel="noopener noreferrer">They Say / I Say: The Moves That Matter in Academic Writing (W. W. Norton/Gerald Graff &amp; Cathy Birkenstein)</a> - The core handbook for this unit, providing practical argumentative templates that frame writing as entering an ongoing rhetorical dialogue.</p>
+<p><a href="https://writingspaces.org/" target="_blank" rel="noopener noreferrer">Writing Spaces: Readings on Writing (Parlor Press &amp; WAC Clearinghouse/Charles Lowe &amp; Pavel Zemliansky, Eds.)</a> - A complementary open-access library of peer-reviewed essays by composition scholars, exploring drafting strategies, research synthesis, and audience awareness.</p>
+<p><a href="https://www.coursera.org/learn/english-composition" target="_blank" rel="noopener noreferrer">English Composition I (Duke University / Coursera)</a> - An interactive video workshop that translates the conversational moves of <em>They Say / I Say</em> into guided writing assignments and peer-review practice.</p>
+    </article>
+  </main>
 
 </body>
 </html>

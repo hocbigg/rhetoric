@@ -1,97 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Projects</title>
-<link rel="stylesheet" href="/rhetoric/style.css">
-<meta name="description" content="">
+  <title>Projects</title>
+  <meta name="description" content="Projects curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/rhetoric/">
+  <link rel="canonical" href="https://hocbigg.github.io/rhetoric/projects.html">
+  <meta property="og:title" content="Projects">
+  <meta property="og:description" content="Projects curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/rhetoric/projects.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Projects">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/rhetoric/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/rhetoric/">Rhetoric</a>
-<a href="/rhetoric/advanced_topics.html">Advanced Topics</a>
-<a href="/rhetoric/projects.html">Projects</a>
-<a href="/rhetoric/extras/courses.html">Extra Courses</a>
-<a href="/rhetoric/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/rhetoric/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/rhetoric/">Rhetoric</a></li>
+      <li><a href="/rhetoric/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/rhetoric/projects.html">Projects</a></li>
+      <li><a href="/rhetoric/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/rhetoric/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/rhetoric" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
 
 <h1 id="projects">Projects</h1>
-<p>This page is a curated collection of well-written, step-by-step guides for learning Rhetoic through hands-on, project-based practice.</p>
 <blockquote>
-<p><em>What I cannot create, I do not understand — Richard Feynman.</em></p>
+<p>"What I cannot create, I do not understand." — Richard Feynman</p>
 </blockquote>
-<p>These projects are meant to support learning throughout the curriculum, not only at the end.<br />
-By building, writing, creating, or reconstructing real artifacts in the field, learners develop practical understanding alongside theoretical study.</p>
-<h2 id="tutorials">Tutorials</h2>
 <ul>
-<li><a href="#deliver-your-own-speech">Deliver your own speech</a></li>
-<li><a href="#construct-your-own-argument">Construct your own argument</a></li>
-<li><a href="#write-your-own-essay">Write your own essay</a></li>
-<li><a href="#craft-your-own-apology">Craft your own apology</a></li>
-<li><a href="#write-your-own-rhetorical-letter">Write your own rhetorical letter</a></li>
-<li><a href="#deliver-your-own-eulogy">Deliver your own eulogy</a></li>
-<li><a href="#write-your-own-editorial">Write your own editorial</a></li>
-<li><a href="#build-your-own-critique">Build your own critique</a></li>
-<li><a href="#design-your-own-visual-artifact">Design your own visual artifact</a></li>
+<li><a href="#deliver-your-own-persuasive-speeches">Persuasive Speeches</a></li>
+<li><a href="#write-your-own-rhetorical-analyses">Rhetorical Analyses</a></li>
+<li><a href="#write-your-own-opinion-editorials">Opinion Editorials</a></li>
+<li><a href="#produce-your-own-multimodal-essays">Multimodal Essays</a></li>
+<li><a href="#craft-your-own-rhetorical-apologias">Rhetorical Apologias</a></li>
+<li><a href="#write-your-own-policy-memos">Policy Memos</a></li>
+<li><a href="#write-your-own-advocacy-letters">Advocacy Letters</a></li>
+<li><a href="#conduct-your-own-corpus-analyses">Corpus Analyses</a></li>
 </ul>
-<h3 id="deliver-your-own-speech">Deliver your own speech</h3>
+<h2 id="deliver-your-own-persuasive-speeches">Deliver your own persuasive speeches</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.toastmasters.org/resources/how-to-write-and-deliver-a-persuasive-speech"><em>How to Write and Deliver a Persuasive Speech</em></a> (Toastmasters Guide)  </li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.write-out-loud.com/how-to-write-a-speech.html"><em>Step-by-Step Guide to Writing a Speech</em></a> (Write-Out-Loud Tutorial)</li>
+<li><a href="https://www.comm.pitt.edu/outlining" target="_blank" rel="noopener noreferrer">Speech Outlining Guide (Department of Communication, University of Pittsburgh)</a></li>
+<li><a href="https://www.comm.pitt.edu/persuasive-speaking" target="_blank" rel="noopener noreferrer">Persuasive Speaking Guide (Department of Communication, University of Pittsburgh)</a></li>
+<li><a href="https://www.toastmasters.org/resources/tips-for-a-persuasive-speech" target="_blank" rel="noopener noreferrer">Tips for a Persuasive Speech (Toastmasters International)</a></li>
 </ul>
-<h3 id="construct-your-own-argument">Construct your own argument</h3>
+<h2 id="write-your-own-rhetorical-analyses">Write your own rhetorical analyses</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://open.umn.edu/opentextbooks/textbooks/how-arguments-work-a-guide-to-writing-and-analyzing-texts-in-college"><em>How Arguments Work: A Guide to Writing and Analyzing Texts</em></a> (Open Textbook with templates)</li>
+<li><a href="https://writingspaces.org/volume-1/" target="_blank" rel="noopener noreferrer">Backpacks vs. Briefcases: Steps Toward Rhetorical Analysis (Laura Bolin Carroll / Writing Spaces)</a></li>
+<li><a href="https://open.umn.edu/opentextbooks/textbooks/how-arguments-work-a-guide-to-writing-and-analyzing-texts-in-college" target="_blank" rel="noopener noreferrer">How Arguments Work: A Guide to Writing and Analyzing Texts in College (Anna Mills / Open Textbook Library)</a></li>
+<li><a href="https://writingcenter.fas.harvard.edu/pages/strategies-essay-writing" target="_blank" rel="noopener noreferrer">Strategies for Essay Writing (Harvard College Writing Center)</a></li>
 </ul>
-<h3 id="write-your-own-essay">Write your own essay</h3>
+<h2 id="write-your-own-opinion-editorials">Write your own opinion editorials</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.scribbr.com/academic-essay/rhetorical-analysis/"><em>How to Write a Rhetorical Analysis Essay Step by Step</em></a> (Scribbr Guide)</li>
+<li><a href="https://www.theopedproject.org/resources" target="_blank" rel="noopener noreferrer">Op-Ed Writing: The Basics (The OpEd Project)</a></li>
+<li><a href="https://www.hks.harvard.edu/more/communications-program" target="_blank" rel="noopener noreferrer">How to Write an Op-Ed or Column (Communications Program, Harvard Kennedy School)</a></li>
 </ul>
-<h3 id="craft-your-own-apology">Craft your own apology</h3>
+<h2 id="produce-your-own-multimodal-essays">Produce your own multimodal essays</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.grammarly.com/blog/writing-tips/apology-letter"><em>How to Write an Apology Letter</em></a> (Grammarly Step-by-Step)</li>
+<li><a href="https://writingspaces.org/volume-3/" target="_blank" rel="noopener noreferrer">An Introduction to and Strategies for Multimodal Composing (Melanie Gagich / Writing Spaces)</a></li>
+<li><a href="https://writingspaces.org/volume-3/" target="_blank" rel="noopener noreferrer">Understanding Visual Rhetoric (Jenae Cohn / Writing Spaces)</a></li>
+<li><a href="https://owl.purdue.edu/owl/general_writing/visual_rhetoric/analyzing_visual_documents/organizing_your_analysis.html" target="_blank" rel="noopener noreferrer">Organizing Your Analysis of Visual Documents (Purdue OWL)</a></li>
 </ul>
-<h3 id="write-your-own-rhetorical-letter">Write your own rhetorical letter</h3>
+<h2 id="craft-your-own-rhetorical-apologias">Craft your own rhetorical apologias</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.themarginalian.org/2012/12/21/how-to-write-letters-1876/"><em>How to Write Letters: A 19th-Century Guide</em></a> (Epistolary Composition Manual)</li>
+<li><a href="https://doi.org/10.1016/S0363-8111(97)90023-0" target="_blank" rel="noopener noreferrer">Image Repair Discourse and Crisis Communication (William L. Benoit / Public Relations Review)</a></li>
+<li><a href="https://instituteforpr.org/crisis-management-and-communications/" target="_blank" rel="noopener noreferrer">Crisis Management and Communications (Institute for Public Relations)</a></li>
 </ul>
-<h3 id="deliver-your-own-eulogy">Deliver your own eulogy</h3>
+<h2 id="write-your-own-policy-memos">Write your own policy memos</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.legacy.com/advice/how-to-write-a-eulogy/"><em>How to Write a Eulogy</em></a> (Legacy Step-by-Step Guide)</li>
+<li><a href="https://policymemos.hks.harvard.edu/" target="_blank" rel="noopener noreferrer">Policy Memos Resource (Harvard Kennedy School)</a></li>
+<li><a href="https://www.hks.harvard.edu/more/communications-program" target="_blank" rel="noopener noreferrer">How to Write a Policy Memo (Communications Program, Harvard Kennedy School)</a></li>
 </ul>
-<h3 id="write-your-own-editorial">Write your own editorial</h3>
+<h2 id="write-your-own-advocacy-letters">Write your own advocacy letters</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.indeed.com/career-advice/career-development/how-to-write-an-editorial"><em>How to Write an Editorial</em></a> (Indeed Step-by-Step)</li>
+<li><a href="https://ctb.ku.edu/en/table-of-contents/advocacy/direct-action/letters-to-elected-officials/main" target="_blank" rel="noopener noreferrer">Writing Letters to Elected Officials (Community Tool Box, University of Kansas)</a></li>
+<li><a href="https://ctb.ku.edu/en/table-of-contents/advocacy/direct-action/letters-to-the-editor/main" target="_blank" rel="noopener noreferrer">Writing Letters to the Editor (Community Tool Box, University of Kansas)</a></li>
 </ul>
-<h3 id="build-your-own-critique">Build your own critique</h3>
+<h2 id="conduct-your-own-corpus-analyses">Conduct your own corpus analyses</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.scribbr.com/academic-essay/critique/"><em>How to Write a Critique</em></a> (Scribbr Guide—adapt for rhetorical focus)</li>
+<li><a href="https://programminghistorian.org/en/lessons/corpus-analysis-with-antconc" target="_blank" rel="noopener noreferrer">Corpus Analysis with AntConc (Heather Froehlich / The Programming Historian)</a></li>
+<li><a href="https://programminghistorian.org/en/lessons/corpus-analysis-with-voyant-tools" target="_blank" rel="noopener noreferrer">Corpus Analysis with Voyant Tools (Silvia Gutiérrez De la Torre / The Programming Historian)</a></li>
+<li><a href="https://programminghistorian.org/en/lessons/introduction-to-stylometry-with-python" target="_blank" rel="noopener noreferrer">Introduction to Stylometry with Python (François Dominic Laramée / The Programming Historian)</a></li>
 </ul>
-<h3 id="design-your-own-visual-artifact">Design your own visual artifact</h3>
-<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://owl.purdue.edu/owl/general_writing/visual_rhetoric/analyzing_visual_documents/organizing_your_analysis.html"><em>Organizing Your Analysis (Visual Rhetoric)</em></a> (Purdue OWL—creation guidance)</li>
-</ul>
-</article>
-</main>
+    </article>
+  </main>
 
 </body>
 </html>

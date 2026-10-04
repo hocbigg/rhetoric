@@ -1,133 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Advanced Topics</title>
-<link rel="stylesheet" href="/rhetoric/style.css">
-<meta name="description" content="">
+  <title>Advanced Topics in Rhetoric</title>
+  <meta name="description" content="Advanced Topics in Rhetoric curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/rhetoric/">
+  <link rel="canonical" href="https://hocbigg.github.io/rhetoric/advanced_topics.html">
+  <meta property="og:title" content="Advanced Topics in Rhetoric">
+  <meta property="og:description" content="Advanced Topics in Rhetoric curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/rhetoric/advanced_topics.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Advanced Topics">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/rhetoric/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/rhetoric/">Rhetoric</a>
-<a href="/rhetoric/advanced_topics.html">Advanced Topics</a>
-<a href="/rhetoric/projects.html">Projects</a>
-<a href="/rhetoric/extras/courses.html">Extra Courses</a>
-<a href="/rhetoric/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/rhetoric/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/rhetoric/">Rhetoric</a></li>
+      <li><a href="/rhetoric/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/rhetoric/projects.html">Projects</a></li>
+      <li><a href="/rhetoric/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/rhetoric/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/rhetoric" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
-<h1 id="advanced-topics">Advanced Topics</h1>
-<p>After the core, choose from these four sections to extend your learning in specific directions:</p>
+  <main id="main-content">
+    <article>
+
+<h1 id="advanced-topics-in-rhetoric">Advanced Topics in Rhetoric</h1>
+<p>Select from these five specialized tracks to deepen your analytical depth and applied rhetorical craft:</p>
 <ul>
-<li>Rhetorical Criticism &amp; Methods – For analyzing how rhetoric works in texts and speeches.</li>
-<li>Modern &amp; Critical Rhetoric – For examining rhetoric's role in society, power, and contemporary issues.</li>
-<li>Visual, Digital, and Media Rhetoric – For studying rhetoric beyond words, in images, online platforms, and algorithms.</li>
-<li>Institutional &amp; Applied Rhetoric – For applying rhetoric in real-world settings like politics, law, or teaching.</li>
+<li><a href="#advanced-rhetorical-theory-critical-traditions">Advanced Rhetorical Theory &amp; Critical Traditions</a> - Investigates ideological, cultural, and philosophical expansions of rhetoric beyond classical persuasion into power dynamics, subjectivity, and symbolic action.</li>
+<li><a href="#rhetorical-criticism-qualitative-methodologies">Rhetorical Criticism &amp; Qualitative Methodologies</a> - Provides advanced research frameworks and qualitative methods for deconstructing symbolic artifacts, material environments, institutional genres, and archival records.</li>
+<li><a href="#visual-digital-and-procedural-rhetorics">Visual, Digital, and Procedural Rhetorics</a> - Investigates how persuasive and communicative power operates across visual artifacts, user interfaces, procedural code, and computational corpora.</li>
+<li><a href="#rhetoric-of-science-technology-and-medicine">Rhetoric of Science, Technology, and Medicine</a> - Examines how scientific consensus, clinical authority, environmental crises, and technological artifacts are rhetorically negotiated and established.</li>
+<li><a href="#civic-legal-and-political-rhetorics">Civic, Legal, and Political Rhetorics</a> - Applies rhetorical frameworks to examine democratic deliberation, grassroots mobilization, legal jurisprudence, and institutional public affairs.</li>
 </ul>
-<h2 id="rhetorical-criticism-methods">RHETORICAL CRITICISM &amp; METHODS</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Resources</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>13. Introduction to Rhetorical Criticism</td>
-<td>- <a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/21w-747-classical-rhetoric-and-modern-political-discourse-fall-2009/">Classical Rhetoric and Modern Political Discourse</a><br>- <a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/rhetoricalcritic0000foss">Rhetorical Criticism (Internet Archive borrow)</a></td>
-</tr>
-<tr>
-<td>14. Methods of Criticism</td>
-<td>- <a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/21w-747-classical-rhetoric-and-modern-political-discourse-fall-2009/">Classical Rhetoric and Modern Political Discourse</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="modern-critical-rhetoric">MODERN &amp; CRITICAL RHETORIC</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Resources</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>15. Rhetoric, Power, and Ideology</td>
-<td>- <a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/21w-747-classical-rhetoric-and-modern-political-discourse-fall-2009/">Classical Rhetoric and Modern Political Discourse</a></td>
-</tr>
-<tr>
-<td>16. Genre and Discourse</td>
-<td>- <a target="_blank" rel="noopener noreferrer" href="https://www.semanticscholar.org/paper/Genre-as-Social-Action-Miller/">Genre as Social Action (Miller – open-access PDF searches lead to academic repositories)</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="visual-digital-and-media-rhetoric">VISUAL, DIGITAL, AND MEDIA RHETORIC</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Resources</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>17. Visual &amp; Multimodal Rhetoric</td>
-<td>- <a target="_blank" rel="noopener noreferrer" href="https://www.colorado.edu/writingcenter/visual-rhetoric">Visual Rhetoric materials (University of Colorado Boulder)</a></td>
-</tr>
-<tr>
-<td>18. Digital Rhetoric</td>
-<td>- <a target="_blank" rel="noopener noreferrer" href="https://kairos.technorhetoric.net/">Kairos Journal (foundational essays)</a></td>
-</tr>
-<tr>
-<td>19. Algorithmic &amp; Platform Rhetoric</td>
-<td>- <a target="_blank" rel="noopener noreferrer" href="https://books.google.com/books/about/The_Interface_Effect.html?id=example">The Interface Effect (Galloway – previews)</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="institutional-applied-rhetoric">INSTITUTIONAL &amp; APPLIED RHETORIC</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Resources</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>20. Public &amp; Political Rhetoric</td>
-<td>- <a target="_blank" rel="noopener noreferrer" href="http://classics.mit.edu/Aristotle/rhetoric.html">Aristotle, Rhetoric (civic sections)</a><br>- <a target="_blank" rel="noopener noreferrer" href="https://www.edx.org/learn/rhetoric/harvard-university-rhetoric-the-art-of-persuasive-writing-and-public-speaking">Rhetoric: The Art of Persuasive Writing and Public Speaking</a></td>
-</tr>
-<tr>
-<td>21. Legal Rhetoric</td>
-<td>- <a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/11-225-argumentation-and-communication-fall-2006/">Argumentation and Communication</a></td>
-</tr>
-<tr>
-<td>22. Pedagogy &amp; Assessment</td>
-<td>- <a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/writingwithoutte0000elbo">Writing Without Teachers (assessment chapters)</a></td>
-</tr>
-</tbody>
-</table>
-</article>
-</main>
+<h2 id="advanced-rhetorical-theory-critical-traditions">Advanced Rhetorical Theory &amp; Critical Traditions</h2>
+<p>Investigates ideological, cultural, and philosophical expansions of rhetoric beyond classical persuasion into power dynamics, subjectivity, and symbolic action.</p>
+<p>Burkean Dramatism and Motives: <a href="https://books.google.com/books?isbn=9780520015449" target="_blank" rel="noopener noreferrer">A Grammar of Motives (Kenneth Burke / University of California Press)</a> - Introduces the dramatistic pentad (act, scene, agent, agency, purpose) and terministic screens to analyze underlying human motives and division.</p>
+<p>Critical Rhetoric and Discursive Formations: <a href="https://books.google.com/books?isbn=9780394711065" target="_blank" rel="noopener noreferrer">The Archaeology of Knowledge (Michel Foucault / Vintage Books)</a> - Establishes the theoretical framework for examining how institutional power regimes dictate what can be articulated, known, and accepted as truth.</p>
+<p>Cultural and Feminist Rhetorics: <a href="https://books.google.com/books?isbn=9780809326693" target="_blank" rel="noopener noreferrer">Rhetorical Listening: Identification, Gender, Whiteness (Krista Ratcliffe / Southern Illinois University Press)</a> - Expands classical rhetorical invention by theorizing listening as an active, conscious tactic for negotiating cross-cultural differences and power asymmetries.</p>
+<p>Publics and Counterpublics: <a href="https://books.google.com/books?isbn=9781890951290" target="_blank" rel="noopener noreferrer">Publics and Counterpublics (Michael Warner / Zone Books)</a> - Demonstrates how texts circulate to generate self-organized publics and how marginalized counterpublics contest dominant civic spheres.</p>
+<h2 id="rhetorical-criticism-qualitative-methodologies">Rhetorical Criticism &amp; Qualitative Methodologies</h2>
+<p>Provides advanced research frameworks and qualitative methods for deconstructing symbolic artifacts, material environments, institutional genres, and archival records.</p>
+<p>Metaphoric Criticism and Cognitive Rhetoric: <a href="https://books.google.com/books?isbn=9780226468013" target="_blank" rel="noopener noreferrer">Metaphors We Live By (George Lakoff &amp; Mark Johnson / University of Chicago Press)</a> - Unpacks the conceptual metaphors that subconsciously structure human cognition, public discourse, and social argumentation.</p>
+<p>Rhetorical Genre Studies: <a href="https://wac.colostate.edu/books/landmarks/bazerman-shaping/" target="_blank" rel="noopener noreferrer">Shaping Written Knowledge: The Genre and Activity of the Experimental Article in Science (Charles Bazerman / The WAC Clearinghouse)</a> - A seminal open-access study showing how textual genres evolve as typified rhetorical responses to recurring institutional and social situations.</p>
+<p>Material and Spatial Rhetorics: <a href="https://books.google.com/books?isbn=9780822962403" target="_blank" rel="noopener noreferrer">Ambient Rhetoric: The Attunements of Rhetorical Being (Thomas Rickert / University of Pittsburgh Press)</a> - Expands rhetorical analysis beyond human symbols to evaluate how physical spaces, material geography, and sensory environments exert persuasive force.</p>
+<p>Archival and Historiographic Methods: <a href="https://books.google.com/books?isbn=9780809328406" target="_blank" rel="noopener noreferrer">Beyond the Archives: Research as a Lived Process (Gesa E. Kirsch &amp; Liz Rohan, Eds. / Southern Illinois University Press)</a> - Explores the methodological, reflexive, and ethical practices involved in retrieving historical voices and reconstructing lost rhetorical traditions.</p>
+<h2 id="visual-digital-and-procedural-rhetorics">Visual, Digital, and Procedural Rhetorics</h2>
+<p>Investigates how persuasive and communicative power operates across visual artifacts, user interfaces, procedural code, and computational corpora.</p>
+<p>Visual Semiotics and Multimodality: <a href="https://books.google.com/books?isbn=9780415672573" target="_blank" rel="noopener noreferrer">Reading Images: The Grammar of Visual Design (Gunther Kress &amp; Theo van Leeuwen / Routledge)</a> - Provides a systematic semiotic grammar to analyze visual composition, spatial vectors, and viewer positioning in multimodal artifacts.</p>
+<p>Digital Rhetorical Theory: <a href="https://doi.org/10.3998/dh.13030181.0001.001" target="_blank" rel="noopener noreferrer">Digital Rhetoric: Theory, Method, Practice (Douglas Eyman / University of Michigan Press)</a> - Synthesizes classical rhetorical principles with digital media scholarship to analyze circulation, digital delivery, and networked interactivity in an open-access format.</p>
+<p>Procedural Rhetoric and Software Systems: <a href="https://books.google.com/books?isbn=9780262514880" target="_blank" rel="noopener noreferrer">Persuasive Games: The Expressive Power of Videogames (Ian Bogost / MIT Press)</a> - Defines procedural rhetoric, examining how rule-based computations, game mechanics, and software processes mount arguments about the real world.</p>
+<p>Computational Corpus Rhetoric: <a href="https://wac.colostate.edu/books/writing/network/" target="_blank" rel="noopener noreferrer">Network Sense: Methods for Visualizing a Discipline (Derek N. Mueller / The WAC Clearinghouse)</a> - An open-access guide demonstrating how to use distant reading, text-mining, and network visualizations to identify macro-level patterns across rhetorical corpora.</p>
+<h2 id="rhetoric-of-science-technology-and-medicine">Rhetoric of Science, Technology, and Medicine</h2>
+<p>Examines how scientific consensus, clinical authority, environmental crises, and technological artifacts are rhetorically negotiated and established.</p>
+<p>Epistemic Rhetoric and Scientific Argumentation: <a href="https://books.google.com/books?isbn=9780226099071" target="_blank" rel="noopener noreferrer">Shaping Science with Rhetoric: The Cases of Dobzhansky, Schrödinger, and Wilson (Leah Ceccarelli / University of Chicago Press)</a> - Analyzes how scientific pioneers deployed interdisciplinary rhetorical strategies to forge paradigm shifts and build consensus across conflicting scientific fields.</p>
+<p>Rhetoric of Health and Medicine: <a href="https://books.google.com/books?isbn=9780809328666" target="_blank" rel="noopener noreferrer">Health and the Rhetoric of Medicine: Diagnostic Realities (Judy Z. Segal / Southern Illinois University Press)</a> - Investigates how diagnostic criteria, clinical authority, and illness narratives function as persuasive interactions between patients and healthcare systems.</p>
+<p>Environmental and Climate Rhetoric: <a href="https://books.google.com/books?isbn=9780817355876" target="_blank" rel="noopener noreferrer">Toxic Tourism: Rhetorics of Pollution, Travel, and Environmental Justice (Phaedra C. Pezzullo / University of Alabama Press)</a> - Explores how community advocates deploy participatory rhetorical strategies and toxic tours to expose environmental racism and influence public policy.</p>
+<p>Rhetoric of Technology and Technical Communication: <a href="https://books.google.com/books?isbn=9780791439326" target="_blank" rel="noopener noreferrer">User-Centered Technology: A Rhetorical Theory for Computers and Other Mundane Artifacts (Robert R. Johnson / State University of New York Press)</a> - Connects classical techne with modern usability to examine how technological tools, system documentation, and interface designs mediate power between makers and users.</p>
+<h2 id="civic-legal-and-political-rhetorics">Civic, Legal, and Political Rhetorics</h2>
+<p>Applies rhetorical frameworks to examine democratic deliberation, grassroots mobilization, legal jurisprudence, and institutional public affairs.</p>
+<p>Deliberative Democracy and Vernacular Publics: <a href="https://books.google.com/books?isbn=9781643362854" target="_blank" rel="noopener noreferrer">Vernacular Voices: The Rhetoric of Publics and Public Spheres (Gerard A. Hauser / University of South Carolina Press)</a> - Examines how everyday citizen exchanges form an associative public sphere that shapes public opinion independently of state institutions.</p>
+<p>Social Movement Rhetoric and Activist Mobilization: <a href="https://books.google.com/books?isbn=9781577667773" target="_blank" rel="noopener noreferrer">Persuasion and Social Movements (Charles J. Stewart, Craig Allen Smith &amp; Robert E. Denton, Jr. / Waveland Press)</a> - Outlines the rhetorical tactics, lifecycle stages, and expressive strategies that grassroots coalitions use to disrupt institutions and achieve policy change.</p>
+<p>Legal Rhetoric and Constitutive Jurisprudence: <a href="https://books.google.com/books?isbn=9780226894935" target="_blank" rel="noopener noreferrer">The Legal Imagination (James Boyd White / University of Chicago Press)</a> - Analyzes the law as a constitutive rhetorical culture where legal actors construct community, interpret statutory narrative, and establish moral meaning.</p>
+    </article>
+  </main>
 
 </body>
 </html>

@@ -1,121 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Great Courses</title>
-<link rel="stylesheet" href="/rhetoric/style.css">
-<meta name="description" content="">
+  <title>Great Courses in Rhetoric</title>
+  <meta name="description" content="Great Courses in Rhetoric curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/rhetoric/">
+  <link rel="canonical" href="https://hocbigg.github.io/rhetoric/extras/courses.html">
+  <meta property="og:title" content="Great Courses in Rhetoric">
+  <meta property="og:description" content="Great Courses in Rhetoric curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/rhetoric/extras/courses.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Great Courses">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/rhetoric/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/rhetoric/">Rhetoric</a>
-<a href="/rhetoric/advanced_topics.html">Advanced Topics</a>
-<a href="/rhetoric/projects.html">Projects</a>
-<a href="/rhetoric/extras/courses.html">Extra Courses</a>
-<a href="/rhetoric/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/rhetoric/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/rhetoric/">Rhetoric</a></li>
+      <li><a href="/rhetoric/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/rhetoric/projects.html">Projects</a></li>
+      <li><a href="/rhetoric/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/rhetoric/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/rhetoric" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
-<h1 id="great-courses">Great Courses</h1>
-<p>This is a list of high-quality courses that, for one reason or another, didn't make it into the curriculum.
-The most common reasons are that the course isn't available often enough,
-or that there was an alternative that fit better into the curriculum.</p>
-<h2 id="introductory-rhetoric">Introductory Rhetoric</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Courses</th>
-<th style="text-align: center;">Duration</th>
-<th style="text-align: center;">Effort</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/21w-747-classical-rhetoric-and-modern-political-discourse-fall-2009/">Classical Rhetoric and Modern Political Discourse</a> (MIT OpenCourseWare)</td>
-<td style="text-align: center;">14 weeks</td>
-<td style="text-align: center;">8-10 hours/week</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/21w-011-writing-and-rhetoric-rhetoric-and-contemporary-issues-fall-2015/">Writing and Rhetoric: Rhetoric and Contemporary Issues</a> (MIT OpenCourseWare)</td>
-<td style="text-align: center;">12 weeks</td>
-<td style="text-align: center;">8-10 hours/week</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/writing2">Writing II: Rhetorical Composing</a> (Ohio State University/Coursera, free to audit)</td>
-<td style="text-align: center;">8 weeks</td>
-<td style="text-align: center;">4-6 hours/week</td>
-</tr>
-</tbody>
-</table>
-<h2 id="advanced-rhetoric">Advanced Rhetoric</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Courses</th>
-<th style="text-align: center;">Duration</th>
-<th style="text-align: center;">Effort</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/21w-747-2-rhetoric-rhetoric-of-science-spring-2006/">Rhetoric of Science</a> (MIT OpenCourseWare)</td>
-<td style="text-align: center;">13 weeks</td>
-<td style="text-align: center;">8-10 hours/week</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/21w-016-writing-and-rhetoric-designing-meaning-fall-2016/">Writing and Rhetoric: Designing Meaning</a> (MIT OpenCourseWare)</td>
-<td style="text-align: center;">12 weeks</td>
-<td style="text-align: center;">8-10 hours/week</td>
-</tr>
-</tbody>
-</table>
-<h2 id="online-learning-great-courses">Online Learning - Great Courses</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Courses</th>
-<th style="text-align: center;">Duration</th>
-<th style="text-align: center;">Effort</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/learning-how-to-learn">Learning How to Learn</a></td>
-<td style="text-align: center;">4 weeks</td>
-<td style="text-align: center;">2 hours/week</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/mindshift">Mindshift</a></td>
-<td style="text-align: center;">4 weeks</td>
-<td style="text-align: center;">2 hours/week</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.edx.org/learn/google-power-searching/google-power-searching-with-google">Powersearching with Google</a></td>
-<td style="text-align: center;">3 weeks</td>
-<td style="text-align: center;">4-6 hours/week</td>
-</tr>
-</tbody>
-</table>
-</article>
-</main>
+  <main id="main-content">
+    <article>
+
+<h1 id="great-courses-in-rhetoric">Great Courses in Rhetoric</h1>
+<p>A curated directory of standout university lecture series, OpenCourseWare repositories, and comprehensive MOOCs in Rhetoric. These audiovisual courses offer deep intuition, historical context, and practical mastery across classical oratory, informal logic, public address, and critical media theory.</p>
+<h2 id="classical-civic-rhetoric">Classical &amp; Civic Rhetoric</h2>
+<ul>
+<li><a href="https://www.edx.org/learn/rhetoric/harvard-university-rhetoric-the-art-of-persuasive-writing-and-public-speaking" target="_blank" rel="noopener noreferrer">Rhetoric: The Art of Persuasive Writing and Public Speaking (edX / Harvard University / Prof. James Engell)</a></li>
+<li><a href="https://www.edx.org/learn/philosophy-ethics/harvard-university-justice" target="_blank" rel="noopener noreferrer">Justice: What's the Right Thing to Do? (edX / Harvard University / Prof. Michael Sandel)</a></li>
+<li><a href="https://www.gresham.ac.uk/watch-now/uses-rhetoric-past-and-present" target="_blank" rel="noopener noreferrer">The Uses of Rhetoric, Past and Present (Gresham College / Prof. Melissa Lane &amp; Prof. Quentin Skinner)</a></li>
+</ul>
+<h2 id="argumentation-logic-and-critical-reasoning">Argumentation, Logic, and Critical Reasoning</h2>
+<ul>
+<li><a href="https://www.coursera.org/learn/understanding-arguments" target="_blank" rel="noopener noreferrer">Think Again I: How to Understand Arguments (Coursera / Duke University / Prof. Walter Sinnott-Armstrong &amp; Prof. Ram Neta)</a></li>
+<li><a href="https://www.coursera.org/learn/logical-fallacies" target="_blank" rel="noopener noreferrer">Think Again IV: How to Avoid Fallacies (Coursera / Duke University / Prof. Walter Sinnott-Armstrong &amp; Prof. Ram Neta)</a></li>
+</ul>
+<h2 id="public-address-speechcraft-and-professional-oratory">Public Address, Speechcraft, and Professional Oratory</h2>
+<ul>
+<li><a href="https://www.coursera.org/specializations/public-speaking" target="_blank" rel="noopener noreferrer">Dynamic Public Speaking Specialization (Coursera / University of Washington / Dr. Matt McGarrity)</a></li>
+<li><a href="https://www.coursera.org/learn/speaking-to-persuade" target="_blank" rel="noopener noreferrer">Speaking to Persuade: Motivating Audiences with Solid Arguments and Moving Language (Coursera / University of Washington / Dr. Matt McGarrity)</a></li>
+<li><a href="https://www.coursera.org/learn/leadership-communication" target="_blank" rel="noopener noreferrer">Leadership Communication for Maximum Impact: Storytelling (Coursera / Northwestern University / Prof. Craig Wortmann)</a></li>
+<li><a href="https://www.gresham.ac.uk/watch-now/the-art-of-rhetoric" target="_blank" rel="noopener noreferrer">The Art of Rhetoric (Gresham College / Simon Lancaster)</a></li>
+</ul>
+<h2 id="rhetorical-criticism-discourse-and-media-theory">Rhetorical Criticism, Discourse, and Media Theory</h2>
+<ul>
+<li><a href="https://oyc.yale.edu/english/engl-300" target="_blank" rel="noopener noreferrer">Introduction to Theory of Literature (Open Yale Courses / Prof. Paul H. Fry)</a></li>
+<li><a href="https://ocw.mit.edu/courses/21l-432-understanding-television-spring-2003/" target="_blank" rel="noopener noreferrer">Understanding Television: American Television: A Cultural History (MIT OpenCourseWare / Prof. David Thorburn)</a></li>
+<li><a href="https://www.coursera.org/learn/communication" target="_blank" rel="noopener noreferrer">Introduction to Communication Science (Coursera / University of Amsterdam / Dr. Rutger de Graaf)</a></li>
+<li><a href="https://www.coursera.org/learn/english-composition" target="_blank" rel="noopener noreferrer">English Composition I (Coursera / Duke University / Dr. Denise Comer)</a></li>
+</ul>
+    </article>
+  </main>
 
 </body>
 </html>

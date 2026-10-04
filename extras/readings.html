@@ -1,93 +1,492 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Great Readings</title>
-<link rel="stylesheet" href="/rhetoric/style.css">
-<meta name="description" content="">
+  <title>Great Readings in Rhetoric</title>
+  <meta name="description" content="Great Readings in Rhetoric curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/rhetoric/">
+  <link rel="canonical" href="https://hocbigg.github.io/rhetoric/extras/readings.html">
+  <meta property="og:title" content="Great Readings in Rhetoric">
+  <meta property="og:description" content="Great Readings in Rhetoric curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/rhetoric/extras/readings.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Great Readings">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/rhetoric/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/rhetoric/">Rhetoric</a>
-<a href="/rhetoric/advanced_topics.html">Advanced Topics</a>
-<a href="/rhetoric/projects.html">Projects</a>
-<a href="/rhetoric/extras/courses.html">Extra Courses</a>
-<a href="/rhetoric/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/rhetoric/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/rhetoric/">Rhetoric</a></li>
+      <li><a href="/rhetoric/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/rhetoric/projects.html">Projects</a></li>
+      <li><a href="/rhetoric/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/rhetoric/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/rhetoric" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
-<h1 id="great-readings">Great Readings</h1>
-<p>This document consists of great books or articles on Rhetoric.
-Some are here because there is a course covering the same material;
-some are just great books that you should read at some point in your career.</p>
-<p>Once you have made it through most of the curriculum, knowing whether a book is worth your time will become easier.
-Or, if you are struggling in one of the courses, perhaps reading a book on the subject will help.</p>
-<h2 id="classical-foundations">Classical Foundations</h2>
-<table>
+  <main id="main-content">
+    <article>
+
+<h1 id="great-readings-in-rhetoric">Great Readings in Rhetoric</h1>
+<p>A curated directory of foundational treatises, transformative monographs, and landmark essays in Rhetoric. These works trace how thinkers across traditions have conceptualized persuasion, civic deliberation, symbolic action, and the discursive construction of knowledge.</p>
+<h2 id="classical-rhetorical-foundations">Classical Rhetorical Foundations</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: center;">Author(s)</th>
+<th>Title</th>
+<th>Author(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Thank-You-Arguing-Aristotle-Simpson/dp/0385347758">Thank You for Arguing: What Aristotle, Lincoln, and Homer Simpson Can Teach Us About the Art of Persuasion</a></td>
-<td style="text-align: center;">Jay Heinrichs</td>
+<td><a href="http://classics.mit.edu/Aristotle/rhetoric.html" target="_blank" rel="noopener noreferrer"><em>Rhetoric</em></a></td>
+<td>Aristotle</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Grammar-Motives-Kenneth-Burke/dp/0520015444">A Grammar of Motives</a></td>
-<td style="text-align: center;">Kenneth Burke</td>
+<td><a href="https://www.gutenberg.org/ebooks/1672" target="_blank" rel="noopener noreferrer"><em>Gorgias</em></a></td>
+<td>Plato</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Elements-Eloquence-Secrets-Perfect-Phrase/dp/042527618X">The Elements of Eloquence: Secrets of the Perfect Turn of Phrase</a></td>
-<td style="text-align: center;">Mark Forsyth</td>
+<td><a href="https://www.gutenberg.org/ebooks/1636" target="_blank" rel="noopener noreferrer"><em>Phaedrus</em></a></td>
+<td>Plato</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780195091984" target="_blank" rel="noopener noreferrer"><em>De Oratore (On the Ideal Orator)</em></a></td>
+<td>Cicero</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780674995918" target="_blank" rel="noopener noreferrer"><em>Institutio Oratoria (The Orator's Education)</em></a></td>
+<td>Quintilian</td>
 </tr>
 </tbody>
-</table>
-<h2 id="modern-and-critical-rhetoric">Modern and Critical Rhetoric</h2>
-<table>
+</table></div>
+<h2 id="modern-rhetorical-theory-and-argumentation">Modern Rhetorical Theory and Argumentation</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: center;">Author(s)</th>
+<th>Title</th>
+<th>Author(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Rhetoric-Fiction-Wayne-C-Booth/dp/0226065588">The Rhetoric of Fiction</a></td>
-<td style="text-align: center;">Wayne C. Booth</td>
+<td><a href="https://archive.org/details/grammarofmotives0000burk" target="_blank" rel="noopener noreferrer"><em>A Grammar of Motives</em></a></td>
+<td>Kenneth Burke</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Farnsworths-Classical-English-Rhetoric-Ward/dp/1567923852">Farnsworth's Classical English Rhetoric</a></td>
-<td style="text-align: center;">Ward Farnsworth</td>
+<td><a href="https://books.google.com/books?isbn=9780268004460" target="_blank" rel="noopener noreferrer"><em>The New Rhetoric: A Treatise on Argumentation</em></a></td>
+<td>Chaïm Perelman and Lucie Olbrechts-Tyteca</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Made-Stick-Ideas-Survive-Others/dp/1400064287">Made to Stick: Why Some Ideas Survive and Others Die</a></td>
-<td style="text-align: center;">Chip Heath &amp; Dan Heath</td>
+<td><a href="https://books.google.com/books?isbn=9780521534833" target="_blank" rel="noopener noreferrer"><em>The Uses of Argument</em></a></td>
+<td>Stephen E. Toulmin</td>
+</tr>
+<tr>
+<td><a href="https://archive.org/details/rhetoricoffictio0000wayn" target="_blank" rel="noopener noreferrer"><em>The Rhetoric of Fiction</em></a></td>
+<td>Wayne C. Booth</td>
+</tr>
+<tr>
+<td><a href="https://files.commons.gc.cuny.edu/wp-content/blogs.dir/8310/files/2021/08/Bitzer1968-the-rhetorical-situation.pdf" target="_blank" rel="noopener noreferrer"><em>The Rhetorical Situation</em></a></td>
+<td>Lloyd F. Bitzer</td>
+</tr>
+<tr>
+<td><a href="https://www.academia.edu/116357934/The_myth_of_the_rhetorical_situation" target="_blank" rel="noopener noreferrer"><em>The Myth of the Rhetorical Situation</em></a></td>
+<td>Richard E. Vatz</td>
+</tr>
+<tr>
+<td><a href="https://www.researchgate.net/publication/238749675_Genre_as_social_action" target="_blank" rel="noopener noreferrer"><em>Genre as Social Action</em></a></td>
+<td>Carolyn R. Miller</td>
 </tr>
 </tbody>
-</table>
-</article>
-</main>
+</table></div>
+<h2 id="public-sphere-ideology-and-civic-discourse">Public Sphere, Ideology, and Civic Discourse</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Author(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://archive.org/details/structuraltransf0000unse" target="_blank" rel="noopener noreferrer"><em>The Structural Transformation of the Public Sphere</em></a></td>
+<td>Jürgen Habermas</td>
+</tr>
+<tr>
+<td><a href="https://www.academia.edu/55671601/Rethinking_the_Public_Sphere_A_Contribution_to_the_Critique_of_Actually_Existing_Democracy" target="_blank" rel="noopener noreferrer"><em>Rethinking the Public Sphere: A Contribution to the Critique of Actually Existing Democracy</em></a></td>
+<td>Nancy Fraser</td>
+</tr>
+<tr>
+<td><a href="https://www.tandfonline.com/doi/abs/10.1080/00335638009383499" target="_blank" rel="noopener noreferrer"><em>The "Ideograph": A Link Between Rhetoric and Ideology</em></a></td>
+<td>Michael Calvin McGee</td>
+</tr>
+<tr>
+<td><a href="https://www.academia.edu/4105673/Critical_rhetoric_Theory_and_praxis" target="_blank" rel="noopener noreferrer"><em>Critical Rhetoric: Theory and Praxis</em></a></td>
+<td>Raymie E. McKerrow</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9781890951290" target="_blank" rel="noopener noreferrer"><em>Publics and Counterpublics</em></a></td>
+<td>Michael Warner</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="feminist-cultural-and-decolonial-rhetorics">Feminist, Cultural, and Decolonial Rhetorics</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Author(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://archive.org/details/rhetoricretoldre0000glen" target="_blank" rel="noopener noreferrer"><em>Rhetoric Retold: Regendering the Tradition from Antiquity Through the Renaissance</em></a></td>
+<td>Cheryl Glenn</td>
+</tr>
+<tr>
+<td><a href="https://archive.org/details/unspokenrhetoric0000glen" target="_blank" rel="noopener noreferrer"><em>Unspoken: A Rhetoric of Silence</em></a></td>
+<td>Cheryl Glenn</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780809326693" target="_blank" rel="noopener noreferrer"><em>Rhetorical Listening: Identification, Gender, Whiteness</em></a></td>
+<td>Krista Ratcliffe</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780822957256" target="_blank" rel="noopener noreferrer"><em>Traces of a Stream: Literacy and Social Change Among African American Women</em></a></td>
+<td>Jacqueline Jones Royster</td>
+</tr>
+<tr>
+<td><a href="https://www.researchgate.net/publication/290941115_2012_CCCC_chair%27s_address_Stories_take_place_A_performance_in_one_act" target="_blank" rel="noopener noreferrer"><em>Stories Take Place: A Performance in One Act</em></a></td>
+<td>Malea Powell</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="rhetoric-of-science-technology-and-digital-media">Rhetoric of Science, Technology, and Digital Media</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Author(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780674768765" target="_blank" rel="noopener noreferrer"><em>The Rhetoric of Science</em></a></td>
+<td>Alan G. Gross</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780226099071" target="_blank" rel="noopener noreferrer"><em>Shaping Science with Rhetoric: The Cases of Dobzhansky, Schrödinger, and Wilson</em></a></td>
+<td>Leah Ceccarelli</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780809328666" target="_blank" rel="noopener noreferrer"><em>Health and the Rhetoric of Medicine: Diagnostic Realities</em></a></td>
+<td>Judy Z. Segal</td>
+</tr>
+<tr>
+<td><a href="https://www.digitalculture.org/books/digital-rhetoric/" target="_blank" rel="noopener noreferrer"><em>Digital Rhetoric: Theory, Method, Practice</em></a></td>
+<td>Douglas Eyman</td>
+</tr>
+<tr>
+<td><a href="https://archive.org/details/persuasivegamese00bogo" target="_blank" rel="noopener noreferrer"><em>Persuasive Games: The Expressive Power of Videogames</em></a></td>
+<td>Ian Bogost</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780415672573" target="_blank" rel="noopener noreferrer"><em>Reading Images: The Grammar of Visual Design</em></a></td>
+<td>Gunther Kress and Theo van Leeuwen</td>
+</tr>
+</tbody>
+</table></div>
+    </article>
+  </main>
 
 </body>
 </html>
